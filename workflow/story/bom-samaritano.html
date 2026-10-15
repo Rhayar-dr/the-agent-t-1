@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>O Bom Samaritano — Livro Ilustrado</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --azul-ceu: #42A5F5;
+      --azul-manto: #2F80C8;
+      --dourado: #FFB300;
+      --lavanda: #9575CD;
+      --verde: #66BB6A;
+      --laranja-suave: #FF9A5C;
+      --fundo: #FFF8E7;
+      --creme: #FFF8E7;
+      --marrom: #3E2F25;
+    }
+    html { background: var(--creme); }
+    body { font-family: 'Nunito', system-ui, sans-serif; margin: 0; color: var(--marrom); min-height: 100vh; }
+    .livro { max-width: 1024px; margin: auto; box-shadow: 0 6px 28px #0002; background: var(--fundo); border-radius: 32px; min-height: 100vh; overflow: hidden; display: flex; flex-direction: column; }
+    .capa, .pagina, .final { display: none; flex: 1 1 0; flex-direction: column; align-items: center; justify-content: center; padding: 40px 0 0 0; }
+    .ativa { display: flex !important; }
+    h1 { font-family: 'Baloo 2', system-ui, sans-serif; font-size: 3rem; font-weight: 700; color: var(--azul-manto); }
+    .ref-biblica { font-size: 1.3rem; color: var(--azul-ceu); margin-bottom: 32px; }
+    .img-capa { width: 420px; height: 236px; background: #CDEEFF; border-radius: 32px; box-shadow: 0 3px 16px #2F80C822 inset; position: relative; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; }
+    .img-capa img, .cena-ilustra img { position: absolute; bottom: 0; }
+    .botao-play { margin-top: 36px; background: var(--dourado); border: none; color: var(--marrom); font: 700 1.4rem 'Baloo 2'; border-radius: 48px; box-shadow: 0 2px 8px #0002; width: 88px; height: 88px; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: filter .15s; }
+    .botao-play img { width: 48px; }
+    /* ------- Paginas -------- */
+    .cabecalho { width: 100%; display: flex; align-items: center; justify-content: space-between; padding: 0 40px 18px; font-size: 1.2rem; }
+    .titulo { font-family: 'Baloo 2', system-ui, sans-serif; color: var(--azul-manto); font-size: 2rem; font-weight: 700; }
+    .progresso { display: flex; gap: 6px; }
+    .progresso-bol { width: 16px; height: 16px; border-radius: 50%; background: #E3E9F5; }
+    .progresso-bol.ativa { background: var(--dourado); box-shadow: 0 0 0 4px #FFEDB844; }
+    .cena-bloco { display: flex; gap: 32px; align-items: stretch; justify-content: center; margin: 0 0 36px 0; }
+    .cena-ilustra { width: 520px; min-width: 320px; height: 295px; border-radius: 24px; position: relative; background: #CDEEFF; overflow: hidden; display: flex; align-items: flex-end; box-shadow: 0 1px 8px #2F80C80c; }
+    .cena-ilustra img { position: absolute; height: 60%; object-fit: contain; left: 50%; transform: translateX(-50%); bottom: 0; }
+    .narra { background: #FFF; border-radius: 24px; box-shadow: 0 2px 12px #42A5F522; width: 365px; min-height: 120px; font-size: 1.5rem; padding: 34px 32px 18px; position: relative; z-index: 2; display: flex; flex-direction: column; justify-content: center; }
+    .narra.alegre { border: 4px solid #FFF1B8; }
+    .narra.surpresa { border: 4px solid #FFE0F0; }
+    .narra.triste { border: 4px solid #E3E9F5; }
+    .narra.calma { border: 4px solid #CDEEFF; }
+    .bal -fala { background: #FFF; border: 2.5px solid var(--azul-ceu); border-radius: 24px; box-shadow: 0 2px 8px #42A5F522; padding: 18px 24px; font-family: 'Nunito', sans-serif; font-size: 1.2rem; position: absolute; left: 50%; top: 6%; transform: translateX(-50%); animation: fadeIn .35s ease; }
+    .bal-nome { font-family: 'Baloo 2', sans-serif; color: var(--azul-manto); margin-bottom: 4px; font-size: 1.08rem; }
+    .botoes-nav { width: 100%; display: flex; justify-content: space-between; gap: 18px; margin: 24px 0 12px; }
+    .btn-nav { min-width: 64px; height: 64px; font-size: 1.18rem; border-radius: 36px; font-family: 'Baloo 2', sans-serif; box-shadow: 0 1px 8px #9575CD55; border: none; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; transition: background .15s; }
+    .btn-nav.voltar { background: var(--lavanda); color: #fff; }
+    .btn-nav.proximo { background: var(--verde); color: #fff; }
+    .btn-ouvir { display: flex; align-items: center; background: none; border: none; font: 700 1rem 'Baloo 2'; color: var(--azul-ceu); gap: 12px; margin: 24px 0 12px; cursor: pointer; }
+    .btn-ouvir img { height: 36px; }
+    /* --------- Final ---------- */
+    .final { flex-direction: column; gap: 24px; background: var(--creme); }
+    .final-estrelas { display: flex; justify-content: center; margin-bottom: 14px; }
+    .estrela-fim { width: 52px; animation: cairEstrela .7s ease-out; }
+    @keyframes cairEstrela { from {transform: translateY(-80px) scale(.7);} to { transform: translateY(0) scale(1); } }
+    .bloco-versiculo, .bloco-licao, .bloco-oracao { border-radius: 18px; box-shadow: 0 2px 14px #0001; padding: 22px 28px; margin-bottom: 15px; }
+    .bloco-versiculo { background: #FFF1B8; }
+    .bloco-licao { background: #DFF3E0; }
+    .bloco-oracao { background: #E8E0F7; }
+    .botoes-fim { display: flex; gap: 18px; justify-content: center; margin-top: 14px; }
+    .btn-fim { font-size: 1.2rem; border-radius: 28px; border: none; padding: 12px 30px; font-family: 'Baloo 2', sans-serif; color: #fff; background: var(--azul-manto); cursor:pointer; box-shadow: 0 1px 8px #2F80C866; transition: background .15s; }
+    .btn-fim.quiz { background: var(--verde); }
+    .btn-fim.repetir { background: var(--dourado); color: var(--marrom); }
+    .btn-fim.home { background: var(--lavanda); }
+    /* --------------- Responsivo  ------------- */
+    @media (max-width: 900px) {
+      .cena-bloco { flex-direction: column; gap: 14px;}
+      .cena-ilustra { width: 86vw; height: 154px; }
+      .narra { width: 90vw; font-size: 1.15rem; padding: 24px 12px 14px; }
+    }
+    @media (max-width:600px) {
+      .livro { border-radius: 0; box-shadow: none; }
+      .img-capa { width: 94vw; height: 160px; }
+      .cena-ilustra { width: 100vw; height: 80vw; }
+      .narra { width: 96vw; min-height: 70px; padding: 20px 7px 11px; font-size: 1.04rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="livro" aria-live="polite">
+    <!-- CAPA -->
+    <section class="capa ativa" id="pag-capa">
+      <h1>O Bom Samaritano</h1>
+      <div class="ref-biblica">Lucas 10:25-37</div>
+      <div class="img-capa">
+        <img src="../assets/cenarios/colina-multidao.svg" alt="Colina com Jesus e multidão" style="width:100%;height:90%;left:0;position: absolute;"/>
+        <img src="../assets/personagens/jesus.svg" alt="Jesus sorrindo" style="height: 78%; left:60%; z-index: 2;"/>
+      </div>
+      <button class="botao-play" onclick="irParaCena(1)"><img src="../assets/ui/play.svg" alt="Começar"></button>
+    </section>
+    <!-- PAGINAS DAS CENAS -->
+    
+    <!-- Será preenchido via JS: cenasHtml -->
+    
+    <!-- PAGINA FINAL -->
+    <section class="final" id="pag-final">
+      <div class="final-estrelas">
+        <img src="../assets/ui/estrela.svg" class="estrela-fim" alt="Estrela dourada">
+        <img src="../assets/ui/estrela.svg" class="estrela-fim" alt="Estrela dourada" style="animation-delay:.15s">
+        <img src="../assets/ui/estrela.svg" class="estrela-fim" alt="Estrela dourada" style="animation-delay:.3s">
+      </div>
+      <div class="bloco-versiculo">
+        <strong>📖 Versículo</strong><br> "Ame o seu próximo como a si mesmo."<br><span style="font-size:0.98em">Lucas 10:27</span>
+        <button class="btn-ouvir" onclick="lerTextoFinal('versiculo')"><img src="../assets/ui/ouvir.svg" alt="Ouvir versículo"> Ouvir</button>
+      </div>
+      <div class="bloco-licao">
+        <strong>💡 O que aprendemos</strong><br> Amar o próximo é ajudar quem precisa, mesmo quem é diferente de nós.
+      </div>
+      <div class="bloco-oracao">
+        <strong>🙏 Vamos orar</strong><br> Querido Jesus, me ajude a ver quem precisa e a ser bondoso todos os dias. Amém.  
+      </div>
+      <div class="botoes-fim">
+        <button class="btn-fim repetir" onclick="irParaCena(0)">↺ Ler de novo</button>
+        <button class="btn-fim quiz" onclick="window.location.href='../../game/quiz.html?historia=bom-samaritano'">🎮 Jogar Quiz</button>
+        <button class="btn-fim home" onclick="window.location.href='../../'">🏠 Outras histórias</button>
+      </div>
+    </section>
+  </main>
+  <script>
+const cenas = [
+  // Cena 1
+  {
+    "titulo": "O Bom Samaritano",
+    "progresso": 1,
+    "cenario": "colina-multidao",
+    "personagens": ["jesus"],
+    "narracao": "Um dia, Jesus contou uma história muito especial.",
+    "emocao": "calma",
+    "dialogos": []
+  },
+  // Cena 2
+  {
+    "titulo": "O Bom Samaritano",
+    "progresso": 2,
+    "cenario": "estrada",
+    "personagens": ["viajante"],
+    "narracao": "Um homem viajava por uma estrada. No caminho, ele se machucou e ficou caído, precisando de ajuda.",
+    "emocao": "triste",
+    "dialogos": []
+  },
+  // Cena 3
+  {
+    "titulo": "O Bom Samaritano",
+    "progresso": 3,
+    "cenario": "estrada",
+    "personagens": ["viajante"],
+    "narracao": "Algumas pessoas passaram por ali, mas não pararam para ajudar.",
+    "emocao": "triste",
+    "dialogos": []
+  },
+  // Cena 4
+  {
+    "titulo": "O Bom Samaritano",
+    "progresso": 4,
+    "cenario": "estrada",
+    "personagens": ["samaritano","viajante"],
+    "narracao": "Então chegou um samaritano. Ele viu o homem e sentiu compaixão.",
+    "emocao": "surpresa",
+    "dialogos": []
+  },
+  // Cena 5
+  {
+    "titulo": "O Bom Samaritano",
+    "progresso": 5,
+    "cenario": "estrada",
+    "personagens": ["samaritano","viajante"],
+    "narracao": "Ele cuidou dos machucados, colocou o homem no seu burrinho e o levou para uma hospedaria.",
+    "emocao": "alegre",
+    "dialogos": [{
+      "personagem": "samaritano",
+      "fala": "Não se preocupe, eu vou cuidar de você!"
+    }]
+  },
+  // Cena 6
+  {
+    "titulo": "O Bom Samaritano",
+    "progresso": 6,
+    "cenario": "colina-multidao",
+    "personagens": ["jesus"],
+    "narracao": "Jesus perguntou: quem foi o bom vizinho? Aquele que ajudou! E Jesus disse: vá e faça o mesmo.",
+    "emocao": "alegre",
+    "dialogos": []
+  }
+];
+
+const personagensImgs = {
+  'jesus': '../assets/personagens/jesus.svg',
+  'viajante': '../assets/personagens/viajante.svg',
+  'samaritano': '../assets/personagens/samaritano.svg'
+};
+const cenariosImgs = {
+  'colina-multidao': '../assets/cenarios/colina-multidao.svg',
+  'estrada': '../assets/cenarios/estrada.svg'
+};
+
+const main = document.querySelector('.livro');
+let paginaAtual = 0;
+function irParaCena(idx) {
+  document.querySelectorAll('.capa, .pagina, .final').forEach(e=>e.classList.remove('ativa'));
+  if (idx===0) {
+    paginaAtual = 0;
+    document.getElementById('pag-capa').classList.add('ativa');
+  } else if (idx>cenas.length) {
+    document.getElementById('pag-final').classList.add('ativa');
+    paginaAtual = cenas.length+1;
+  } else {
+    paginaAtual = idx;
+    document.getElementById('pagina-'+idx).classList.add('ativa');
+  }
+}
+function proxima() {
+  if (paginaAtual<cenas.length) irParaCena(paginaAtual+1);
+  else irParaCena(cenas.length+1);
+}
+function voltar() {
+  if (paginaAtual>1) irParaCena(paginaAtual-1);
+  else irParaCena(0);
+}
+// Navegação via teclado
+window.addEventListener('keydown', e=>{
+  if(document.querySelector('.pagina.ativa')) {
+    if(e.key==='ArrowRight') proxima();
+    if(e.key==='ArrowLeft') voltar();
+  }
+});
+// Renderiza paginas das cenas
+function renderCenas() {
+  let cenasHtml = '';
+  cenas.forEach((cena,i)=>{
+    cenasHtml+=`
+    <section class="pagina" id="pagina-${i+1}" aria-label="Cena ${i+1}">
+      <header class="cabecalho">
+        <button class="btn-nav voltar" onclick="voltar()"><img src="../assets/ui/voltar.svg" alt="Voltar" style="height:28px"> Voltar</button>
+        <span class="titulo">${cena.titulo}</span>
+        <div class="progresso">${cenas.map((_,j)=>`<span class="progresso-bol${j===i?' ativa':''}"></span>`).join('')}</div>
+      </header>
+      <div class="cena-bloco">
+        <div class="cena-ilustra">
+          <img src="${cenariosImgs[cena.cenario]||cenariosImgs['colina-multidao']}" alt="cenário" style="width:100%;height:100%;object-fit:cover;left:0;position:absolute;"/>
+          ${cena.personagens.map((pid,idx)=>`<img src="${personagensImgs[pid]}" alt="${pid==='jesus'?'Jesus sorrindo':pid==='viajante'?'Homem machucado':'O Bom Samaritano'}" style="height:${cena.personagens.length>1?'45%':'60%'}; left:${idx==0?35:65}%; z-index:2;">`).join('')}
+        </div>
+        <div class="narra ${cena.emocao ? cena.emocao : ''}">
+          ${cena.narracao}
+          <button class="btn-ouvir" onclick="lerPagina(${i+1})"><img src="../assets/ui/ouvir.svg" alt="Ouvir"> Ouvir</button>
+          ${cena.dialogos && cena.dialogos.length>0 ?
+            `<div class="bal-fala"><span class="bal-nome">${cena.dialogos[0].personagem.charAt(0).toUpperCase()+cena.dialogos[0].personagem.slice(1)}</span>${cena.dialogos[0].fala}</div>`:'' }
+        </div>
+      </div>
+      <nav class="botoes-nav">
+        <button class="btn-nav voltar" onclick="voltar()"><img src="../assets/ui/voltar.svg" alt="Voltar" style="height:24px"> Voltar</button>
+        <button class="btn-nav proximo" onclick="proxima()">Próximo <img src="../assets/ui/proximo.svg" alt="Próximo" style="height:24px"></button>
+      </nav>
+    </section>
+    `;
+  });
+  main.insertAdjacentHTML('beforeend', cenasHtml);
+}
+renderCenas();
+// Voz
+function lerPagina(idx) {
+  const cena = cenas[idx-1];
+  const txt = [cena.narracao].concat((cena.dialogos||[]).map(d=>d.fala)).join(' ');
+  if(window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(txt);
+    u.lang = 'pt-BR';
+    window.speechSynthesis.speak(u);
+  } else {
+    alert('Leitor de voz não disponível.');
+  }
+}
+function lerTextoFinal(campo) {
+  let txt = '';
+  if(campo==='versiculo') {
+    txt = 'Ame o seu próximo como a si mesmo. Lucas dez vinte e sete.';
+  }
+  if(window.speechSynthesis) {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(txt);
+    u.lang = 'pt-BR';
+    window.speechSynthesis.speak(u);
+  }
+}
+irParaCena(0);
+  </script>
+</body>
+</html>
