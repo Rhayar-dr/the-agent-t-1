@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz da Palavra — O Bom Samaritano</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', 'Comic Sans', cursive, Arial, sans-serif;
+      background: #F3FAFF;
+      margin: 0; padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    #quizContainer {
+      background: #fff;
+      border-radius: 32px;
+      box-shadow: 0 8px 32px rgba(0,80,168,0.11);
+      max-width: 420px;
+      width: 95vw;
+      padding: 36px 24px 28px 24px;
+      box-sizing: border-box;
+    }
+    .top-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 14px;
+      font-size: 18px;
+      height: 36px;
+    }
+    .estrelas {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+      font-size: 26px;
+    }
+    .pergunta-img {
+      display: block;
+      margin: 0 auto 20px auto;
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: #E0F2FF url('../assets/personagens/samaritano.svg') no-repeat center/80px auto;
+    }
+    .pergunta-area {
+      background: #E7F4FF;
+      border-radius: 16px;
+      padding: 16px 16px 8px 16px;
+      position: relative;
+      margin-bottom: 16px;
+      min-height: 64px;
+      font-size: 22px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .btn-ouvir {
+      background: none; border: none; padding: 0;
+      margin-left: 10px; cursor: pointer;
+    }
+    .btn-ouvir img { width: 32px; height: 32px; }
+    .opcao {
+      display: flex; align-items: center;
+      background: #fff;
+      border: 2px solid #87C4F8;
+      border-radius: 12px;
+      padding: 18px;
+      font-size: 22px;
+      margin-bottom: 12px;
+      min-height: 44px;
+      cursor: pointer;
+      transition: box-shadow 0.1s, background 0.2s, border 0.2s, transform 0.12s;
+      user-select: none;
+    }
+    .opcao:hover, .opcao:focus {
+      background: #D8EEFF;
+      box-shadow: 0 2px 12px #7ec6f666;
+      outline: none;
+    }
+    .opcao.errada {
+      background: #FFE9D6;
+      border: 2px solid #FFA755;
+      animation: shake 0.12s 2;
+      color: #CC5800;
+    }
+    .opcao.certa {
+      background: #DDFDDB;
+      border: 2px solid #55D665;
+      color: #156624;
+    }
+    @keyframes shake {
+      0% { transform: translateX(0px); }
+      25% { transform: translateX(-6px); }
+      50% { transform: translateX(6px); }
+      75% { transform: translateX(-4px); }
+      100%{ transform: translateX(0px); }
+    }
+    .feedback {
+      margin: 18px 0 0 0;
+      background: #F7FFDB;
+      border-radius: 16px;
+      padding: 18px 16px;
+      font-size: 20px;
+      text-align: center;
+      border: 2px solid #ECEEB7;
+      position: relative;
+    }
+    .feedback .estrela {
+      height: 32px; vertical-align: middle; margin-right: 6px;
+    }
+    .proximo-btn {
+      background: #3BAD9C;
+      color: #fff;
+      font-size: 22px;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 32px;
+      margin: 16px 0 0 0;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: inherit;
+    }
+    .proximo-btn:hover {
+      background: #259e97;
+    }
+    .final {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .final-estrelas { font-size: 32px; margin: 16px 0; }
+    .versiculo { font-size: 20px; margin-top: 18px; color: #287dd7; }
+    .licao-final { font-size: 18px; color: #196845; margin: 14px 0; }
+    .btn-reiniciar {
+      background: #267FFF;
+      color: #fff;
+      font-size: 20px;
+      border: none; border-radius: 9px; margin: 10px; padding: 10px 28px; cursor: pointer;
+      font-family: inherit;
+    }
+    .btn-reiniciar:hover { background: #005fc1; }
+    .btn-voltar {
+      background: none; border: none; color: #2687F7; font-size: 18px;
+      cursor: pointer; margin-right: 8px;
+      font-family: inherit;
+    }
+    @media (max-width: 480px) {
+      #quizContainer{ padding: 14px 2vw 18px 2vw; }
+      .pergunta-img{ width: 80px; height: 80px; }
+      .pergunta-area { font-size: 18px; }
+      .opcao { font-size: 18px; padding: 12px; }
+    }
+  </style>
+</head>
+<body>
+<div id="quizContainer">
+  <div class="top-bar">
+    <button class="btn-voltar" onclick="voltarInicio()">⟵ Início</button>
+    <span id="progresso"></span>
+    <span id="estrelas"></span>
+  </div>
+  <div id="areaQuiz"></div>
+</div>
+<script>
+// Dados da história
+const perguntas = [
+  {
+    pergunta: "O que aconteceu com o viajante?",
+    opcoes: ["Ele se machucou no caminho", "Ele ganhou um presente", "Ele foi pescar"],
+    correta: 0,
+    explicacao: "O viajante se machucou e precisava de ajuda."
+  },
+  {
+    pergunta: "Quem parou para ajudar?",
+    opcoes: ["Ninguém", "O samaritano", "Um leão"],
+    correta: 1,
+    explicacao: "O samaritano parou e cuidou dele com amor."
+  },
+  {
+    pergunta: "O que Jesus nos ensina com essa história?",
+    opcoes: ["Ajudar só os amigos", "Amar e ajudar o próximo", "Passar longe de quem precisa"],
+    correta: 1,
+    explicacao: "Jesus quer que a gente ame e ajude todas as pessoas."
+  }
+];
+const versiculo = "\u201cAme o seu próximo como a si mesmo.\u201d (Lucas 10:27)";
+const licao = "Amar o próximo é ajudar quem precisa, mesmo quem é diferente de nós.";
+// Feedbacks aleatórios
+const feedbackAcerto = ["Muito bem!", "Você acertou!", "Parabéns, amiguinho!", "Isso mesmo!"];
+const feedbackTente = ["Quase! Tente de novo.", "Vamos tentar mais uma vez?", "Pense com carinho e tente de novo!"];
+
+let quizIdx = 0;
+let acertos = 0;
+let estrelasObtidas = [false,false,false];
+let estado = "pergunta"; // ou 'feedback' ou 'final'
+let opcValida;
+
+function embaralha(a){
+  for(let i=a.length-1;i>0;i--){
+    const j=Math.floor(Math.random()*(i+1));
+    [a[i],a[j]]=[a[j],a[i]];
+  }
+}
+
+function mostraQuiz(){
+  document.getElementById('progresso').textContent = `Pergunta ${quizIdx+1} de ${perguntas.length}`;
+  document.getElementById('estrelas').innerHTML = estrelaSpan();
+  let p = perguntas[quizIdx];
+  // Embaralha opções
+  let opcs = p.opcoes.map((t,ix)=>({txt:t,i:ix}));
+  embaralha(opcs);
+
+  // Associa qual é a opção correta
+  opcValida = opcs.findIndex(o => o.i === p.correta);
+
+  document.getElementById('areaQuiz').innerHTML = `
+    <div class="pergunta-img"></div>
+    <div class="pergunta-area">
+      <span>${p.pergunta}</span>
+      <button class="btn-ouvir" aria-label="Ouvir pergunta" onclick="ouvir('${p.pergunta.replace(/'/g, '\'')}')"><img src="../assets/ui/ouvir.svg" alt="Ouvir"></button>
+    </div>
+    <div id="opcoes">${opcs.map((o,ix)=>
+      `<div class="opcao" tabindex="0" id="opc${ix}" onclick="checaOpcao(${ix})" onkeydown="if(event.key==='Enter'){checaOpcao(${ix});}" >
+        <b>${String.fromCharCode(65+ix)}</b>&nbsp; ${o.txt}
+      </div>`).join('')}
+    </div>
+  `;
+  estado = "pergunta";
+}
+
+function checaOpcao(ix){
+  if(estado!=="pergunta") return;
+  const p=perguntas[quizIdx];
+  const opDivs = document.querySelectorAll('.opcao');
+  if(ix===opcValida){
+    acertos++;
+    estrelasObtidas[quizIdx]=true;
+    opDivs[ix].classList.add("certa");
+    estado="feedback";
+    setTimeout(()=>mostraFeedbackAcerto(p),240);
+    tocarSomAcerto();
+  }else{
+    opDivs[ix].classList.add("errada");
+    // Remove classe após animação para reusar
+    setTimeout(()=>{opDivs[ix].classList.remove("errada")},180);
+    // Tente de novo
+    mostraFeedbackErro();
+    tocarSomErro();
+    opDivs[ix].focus();
+  }
+}
+
+function mostraFeedbackAcerto(p){
+  document.getElementById('areaQuiz').innerHTML = `
+    <div class="feedback">
+      <img class="estrela" src="../assets/ui/estrela.svg" alt="Estrela"> <b>${feedbackAcerto[Math.floor(Math.random()*feedbackAcerto.length)]}</b><br>
+      <span style="font-size:17px;display:block;margin:8px 0 0 0;">${p.explicacao}</span>
+      <button class="proximo-btn" onclick="proximoQuiz()">Próximo →</button>
+    </div>
+  `;
+}
+
+function mostraFeedbackErro(){
+  // Já tem a opção errada estourada
+  let f = feedbackTente[Math.floor(Math.random()*feedbackTente.length)];
+  // Feedback gentil, foco volta às opções
+  let fb = document.getElementById('areaQuiz').querySelector('.feedback-erro');
+  if(!fb){
+    let d = document.createElement('div');
+    d.className = 'feedback feedback-erro';
+    d.innerHTML = `↻ ${f}`;
+    document.getElementById('areaQuiz').appendChild(d);
+    setTimeout(()=>{if(d)d.remove();},1600);
+  }
+}
+
+function proximoQuiz(){
+  quizIdx++;
+  if(quizIdx>=perguntas.length){
+    mostraFinal();
+  }else{
+    mostraQuiz();
+  }
+}
+
+function mostraFinal(){
+  estado = "final";
+  let nEst = acertos>0?acertos:1;
+  let estrelas = Array(nEst).fill('⭐').join(' ') + Array(perguntas.length-nEst).fill('○').join(' ');
+  document.getElementById('progresso').textContent = '';
+  document.getElementById('estrelas').innerHTML = estrelaSpan();
+  document.getElementById('areaQuiz').innerHTML = `
+    <div class="final">
+      <div class="final-estrelas">${estrelas}</div>
+      <div style="font-size:21px; margin-bottom:12px;">Você ganhou ${nEst} estrelas!</div>
+      <div class="licao-final">${licao}</div>
+      <div class="versiculo">
+        <img src="../assets/ui/ouvir.svg" onclick="ouvir('${versiculo.replace(/'/g, '\'')}')" style="height:20px;vertical-align:middle;cursor:pointer;"></img> ${versiculo}
+      </div>
+      <button class="btn-reiniciar" onclick="reiniciaQuiz()">Jogar de novo</button>
+    </div>
+  `;
+  tocarSomFinal();
+}
+
+function reiniciaQuiz(){
+  acertos=0;quizIdx=0;estrelasObtidas=[false,false,false]; mostraQuiz();
+}
+function voltarInicio(){ window.location.href = "../index.html"; }
+function estrelaSpan(){
+  let s = '';
+  for(let i=0;i<perguntas.length;i++){
+    if(estrelasObtidas[i])s+='⭐ ';
+    else s+='○ ';
+  }
+  return s;
+}
+function ouvir(txt){
+  if('speechSynthesis' in window){
+    let u = new SpeechSynthesisUtterance(txt);
+    u.lang = 'pt-BR';
+    u.rate = 1.02;
+    u.pitch = 1.05;
+    window.speechSynthesis.cancel();
+    window.speechSynthesis.speak(u);
+  }
+}
+// Sons (WebAudio API)
+function tocarSomAcerto(){
+  try{
+    let a=new(window.AudioContext||window.webkitAudioContext)();
+    let o=a.createOscillator(),g=a.createGain();o.type='triangle';o.frequency.value=660;
+    g.gain.value=0.18;o.connect(g);g.connect(a.destination);
+    o.start();o.frequency.linearRampToValueAtTime(880,a.currentTime+0.18);
+    o.stop(a.currentTime+0.32);
+    setTimeout(()=>a.close(),380);
+  }catch(e){}
+}
+function tocarSomErro(){
+  try{
+    let a=new(window.AudioContext||window.webkitAudioContext)();
+    let o=a.createOscillator(),g=a.createGain();o.type='sine';
+    o.frequency.value=440;g.gain.value=0.11;
+    o.connect(g);g.connect(a.destination);
+    o.start();o.frequency.linearRampToValueAtTime(330,a.currentTime+0.12);
+    o.stop(a.currentTime+0.22);
+    setTimeout(()=>a.close(),300);
+  }catch(e){}
+}
+function tocarSomFinal(){
+  try{
+    let a=new(window.AudioContext||window.webkitAudioContext)();let now=a.currentTime;
+    let notas=[523,659,783,1046],dur=0.16;
+    notas.forEach((f,i)=>{
+      let o=a.createOscillator(),g=a.createGain();o.type='triangle';g.gain.value=0.13;
+      o.frequency.value=f;
+      o.connect(g);g.connect(a.destination);
+      o.start(now+i*dur);o.stop(now+i*dur+dur);
+    });setTimeout(()=>a.close(),900);
+  }catch(e){}
+}
+// Inicialização
+mostraQuiz();
+</script>
+</body>
+</html>
