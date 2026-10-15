@@ -9,3 +9,6 @@
 | D5 | Fase 1 | Ortografia vigente (ex.: "deem", não "dêem"). | Padrão de português atual. |
 | D6 | Fase 1 | Campo opcional **`cenas[].cenario`** (id de `assets/cenarios/<id>.svg`). Bruno preenche nas histórias. Engenharia infere por `descricao_visual` quando o campo faltar, com fallback `campo-galileia`. | Proposta da Ana. Evita adivinhação frágil no livro e no vídeo. |
 | D7 | Fase 1 | **`descricao_visual` do JSON é a referência do personagem**. O SVG e o guia visual seguem o JSON; se a Ana precisar mudar, avisa o Bruno para atualizar o JSON. | Fonte única de verdade. |
+| D8 | Fase 1 | **Cenários oficiais** (`assets/cenarios/<id>.svg`): estrada, arca, interior-arca, campo-galileia, colina-multidao, casa, festa, lago, lago-tempestade, cidade-jerico. Novos ids só com aprovação da Roberta. Esta lista vale sobre a descrição do schema. | Histórias 5-7 (Tempestade, Zaqueu). |
+| D9 | Fase 1 | Jesus nunca é peça arrastável nem elemento de ganhar ou perder nos jogos. Aparece como guia ou fica fixo no cenário. | Guia visual §5 e GDD. |
+| D10 | Fase 1 | O "workflow de geração" inclui criar histórias novas com apoio de LLM: um prompt-modelo gera o JSON no schema, que depois passa pelo validador e pelo checklist de revisão humana antes de seguir para vídeo, livro e jogos. | Objetivo do projeto: workflow repetível. |
