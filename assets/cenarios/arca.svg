@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Arca de Noé com arco-íris"><title>Arca</title>
+<rect width="1280" height="720" fill="#cdeeff"/>
+<path d="M140 470 A500 500 0 0 1 1140 470" stroke="#ef5350" stroke-width="26" fill="none"/><path d="M166 470 A474 474 0 0 1 1114 470" stroke="#ffa726" stroke-width="26" fill="none"/>
+<path d="M192 470 A448 448 0 0 1 1088 470" stroke="#ffee58" stroke-width="26" fill="none"/><path d="M218 470 A422 422 0 0 1 1062 470" stroke="#66bb6a" stroke-width="26" fill="none"/>
+<path d="M244 470 A396 396 0 0 1 1036 470" stroke="#42a5f5" stroke-width="26" fill="none"/><path d="M270 470 A370 370 0 0 1 1010 470" stroke="#7e57c2" stroke-width="26" fill="none"/>
+<ellipse cx="200" cy="150" rx="100" ry="32" fill="#fff"/><ellipse cx="1060" cy="120" rx="110" ry="32" fill="#fff"/>
+<path d="M0 560 Q320 520 640 560 T1280 550 L1280 720 L0 720Z" fill="#7cc576"/>
+<path d="M330 440 L950 440 L880 570 Q640 600 400 570Z" fill="#a9744a"/><path d="M330 440 L950 440 L940 462 L342 462Z" fill="#8a5a33"/>
+<rect x="450" y="330" width="380" height="115" rx="8" fill="#c68b59"/><path d="M430 335 L640 240 L850 335Z" fill="#8a5a33"/>
+<rect x="615" y="365" width="50" height="70" rx="25" fill="#5d3b1f"/><circle cx="520" cy="395" r="18" fill="#ffe082"/><circle cx="760" cy="395" r="18" fill="#ffe082"/>
+<path d="M400 500 H880 M420 535 H860" stroke="#8a5a33" stroke-width="6" opacity=".5"/>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Viajante"><title>Viajante</title>
+<ellipse cx="200" cy="574" rx="110" ry="16" fill="#000" opacity=".12"/>
+<rect x="165" y="470" width="28" height="90" rx="12" fill="#a9743f"/><rect x="207" y="470" width="28" height="90" rx="12" fill="#a9743f"/>
+<rect x="160" y="500" width="38" height="30" rx="12" fill="#fff"/>
+<ellipse cx="172" cy="563" rx="26" ry="12" fill="#5b3a1e"/><ellipse cx="228" cy="563" rx="26" ry="12" fill="#5b3a1e"/>
+<path d="M130 230 Q200 205 270 230 L300 500 Q200 530 100 500Z" fill="#9c6b3f"/>
+<path d="M170 385 Q200 400 230 385" stroke="#000" stroke-opacity=".15" stroke-width="10" fill="none" stroke-linecap="round"/>
+<rect x="80" y="260" width="34" height="150" rx="17" fill="#9c6b3f" transform="rotate(8 97 260)"/><rect x="286" y="260" width="34" height="150" rx="17" fill="#9c6b3f" transform="rotate(-8 303 260)"/>
+<circle cx="86" cy="418" r="17" fill="#a9743f"/><circle cx="314" cy="418" r="17" fill="#a9743f"/>
+<rect x="232" y="340" width="80" height="70" rx="14" fill="#6d4423"/><path d="M242 340 Q272 298 302 340" stroke="#4b2e17" stroke-width="8" fill="none"/><rect x="264" y="365" width="16" height="14" rx="3" fill="#f4c542"/>
+<rect x="184" y="190" width="32" height="45" rx="12" fill="#a9743f"/>
+<circle cx="200" cy="130" r="62" fill="#a9743f"/><circle cx="140" cy="135" r="11" fill="#a9743f"/><circle cx="260" cy="135" r="11" fill="#a9743f"/>
+<path d="M142 112 Q150 62 200 60 Q250 62 258 112 Q230 90 200 92 Q170 90 142 112Z" fill="#2b1d14"/>
+<circle cx="178" cy="132" r="7" fill="#3b2a20"/><circle cx="222" cy="132" r="7" fill="#3b2a20"/><circle cx="180" cy="130" r="2.5" fill="#fff"/><circle cx="224" cy="130" r="2.5" fill="#fff"/>
+<path d="M166 118 L190 124 M234 118 L210 124" stroke="#2b1d14" stroke-width="4" stroke-linecap="round"/>
+<path d="M186 168 Q200 156 214 168" stroke="#7a3b2e" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

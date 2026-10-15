@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Filho pródigo"><title>Filho pródigo</title>
+<ellipse cx="200" cy="574" rx="110" ry="16" fill="#000" opacity=".12"/>
+<rect x="165" y="470" width="28" height="90" rx="12" fill="#e3b58f"/><rect x="207" y="470" width="28" height="90" rx="12" fill="#e3b58f"/>
+<ellipse cx="172" cy="563" rx="26" ry="12" fill="#6b4a2a"/><ellipse cx="228" cy="563" rx="26" ry="12" fill="#6b4a2a"/>
+<path d="M130 230 Q200 205 270 230 L295 500 Q200 530 105 500Z" fill="#7e57c2"/>
+<rect x="150" y="370" width="100" height="14" rx="7" fill="#f5e6c8"/>
+<path d="M115 480 L135 505 L160 488 L185 512 L215 490 L245 512 L265 488 L285 505 L295 480Z" fill="#7e57c2"/>
+<rect x="80" y="260" width="34" height="150" rx="17" fill="#7e57c2" transform="rotate(8 97 260)"/><rect x="286" y="260" width="34" height="150" rx="17" fill="#7e57c2" transform="rotate(-8 303 260)"/>
+<circle cx="86" cy="418" r="17" fill="#e3b58f"/><circle cx="314" cy="418" r="17" fill="#e3b58f"/>
+<rect x="184" y="190" width="32" height="45" rx="12" fill="#e3b58f"/>
+<circle cx="200" cy="130" r="62" fill="#e3b58f"/><circle cx="140" cy="135" r="11" fill="#e3b58f"/><circle cx="260" cy="135" r="11" fill="#e3b58f"/>
+<path d="M140 118 Q140 62 200 60 Q260 62 260 118 Q235 88 200 92 Q165 88 140 118Z" fill="#3a2415"/>
+<circle cx="178" cy="132" r="7" fill="#3b2a20"/><circle cx="222" cy="132" r="7" fill="#3b2a20"/><circle cx="180" cy="130" r="2.5" fill="#fff"/><circle cx="224" cy="130" r="2.5" fill="#fff"/>
+<circle cx="165" cy="152" r="9" fill="#ff8a80" opacity=".4"/><circle cx="235" cy="152" r="9" fill="#ff8a80" opacity=".4"/>
+<path d="M184 162 Q200 176 216 162" stroke="#7a3b2e" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

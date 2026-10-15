@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Jesus"><title>Jesus</title>
+<ellipse cx="200" cy="574" rx="110" ry="16" fill="#000" opacity=".12"/>
+<rect x="165" y="470" width="28" height="90" rx="12" fill="#d9a679"/><rect x="207" y="470" width="28" height="90" rx="12" fill="#d9a679"/>
+<ellipse cx="172" cy="563" rx="26" ry="12" fill="#7a4b2a"/><ellipse cx="228" cy="563" rx="26" ry="12" fill="#7a4b2a"/>
+<path d="M130 230 Q200 205 270 230 L300 510 Q200 535 100 510Z" fill="#f8f4e8"/>
+<path d="M120 225 Q65 340 90 500 L150 505 Q135 370 175 240Z" fill="#2f80c8"/><path d="M280 225 Q335 340 310 500 L250 505 Q265 370 225 240Z" fill="#2f80c8"/>
+<path d="M130 222 Q200 262 270 222 L270 242 Q200 287 130 242Z" fill="#2f80c8"/>
+<rect x="76" y="262" width="34" height="150" rx="17" fill="#f8f4e8" transform="rotate(10 93 262)"/><rect x="290" y="262" width="34" height="150" rx="17" fill="#f8f4e8" transform="rotate(-10 307 262)"/>
+<circle cx="80" cy="420" r="17" fill="#d9a679"/><circle cx="320" cy="420" r="17" fill="#d9a679"/>
+<rect x="184" y="190" width="32" height="45" rx="12" fill="#d9a679"/>
+<circle cx="200" cy="130" r="62" fill="#d9a679"/><circle cx="140" cy="135" r="11" fill="#d9a679"/><circle cx="260" cy="135" r="11" fill="#d9a679"/>
+<path d="M138 125 Q135 60 200 58 Q265 60 262 125 L268 195 Q248 175 252 120 Q200 80 148 120 Q152 175 132 195Z" fill="#5a3a22"/>
+<path d="M154 150 Q160 215 200 220 Q240 215 246 150 Q226 188 200 188 Q174 188 154 150Z" fill="#5a3a22"/>
+<circle cx="178" cy="130" r="7" fill="#3b2a20"/><circle cx="222" cy="130" r="7" fill="#3b2a20"/><circle cx="180" cy="128" r="2.5" fill="#fff"/><circle cx="224" cy="128" r="2.5" fill="#fff"/>
+<circle cx="165" cy="152" r="9" fill="#ff8a80" opacity=".4"/><circle cx="235" cy="152" r="9" fill="#ff8a80" opacity=".4"/>
+<path d="M184 170 Q200 184 216 170" stroke="#f8f4e8" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

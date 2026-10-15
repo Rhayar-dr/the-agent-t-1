@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Pai"><title>Pai</title>
+<ellipse cx="200" cy="574" rx="110" ry="16" fill="#000" opacity=".12"/>
+<rect x="165" y="470" width="28" height="90" rx="12" fill="#a9743f"/><rect x="207" y="470" width="28" height="90" rx="12" fill="#a9743f"/>
+<ellipse cx="172" cy="563" rx="26" ry="12" fill="#5b3a1e"/><ellipse cx="228" cy="563" rx="26" ry="12" fill="#5b3a1e"/>
+<path d="M130 230 Q200 205 270 230 L300 510 Q200 535 100 510Z" fill="#c0392b"/>
+<path d="M120 225 Q70 340 95 490 L150 495 Q135 370 175 240Z" fill="#f5e6c8"/><path d="M280 225 Q330 340 305 490 L250 495 Q265 370 225 240Z" fill="#f5e6c8"/>
+<rect x="150" y="365" width="100" height="14" rx="7" fill="#e0b050"/>
+<rect x="60" y="250" width="34" height="150" rx="17" fill="#c0392b" transform="rotate(35 77 250)"/><rect x="306" y="250" width="34" height="150" rx="17" fill="#c0392b" transform="rotate(-35 323 250)"/>
+<circle cx="42" cy="372" r="17" fill="#a9743f"/><circle cx="358" cy="372" r="17" fill="#a9743f"/>
+<rect x="184" y="190" width="32" height="45" rx="12" fill="#a9743f"/>
+<circle cx="200" cy="130" r="62" fill="#a9743f"/><circle cx="140" cy="135" r="11" fill="#a9743f"/><circle cx="260" cy="135" r="11" fill="#a9743f"/>
+<path d="M142 112 Q150 62 200 60 Q250 62 258 112 Q230 90 200 92 Q170 90 142 112Z" fill="#a8a8a8"/>
+<path d="M154 150 Q160 210 200 214 Q240 210 246 150 Q226 184 200 184 Q174 184 154 150Z" fill="#b5b5b5"/>
+<circle cx="178" cy="132" r="7" fill="#3b2a20"/><circle cx="222" cy="132" r="7" fill="#3b2a20"/><circle cx="180" cy="130" r="2.5" fill="#fff"/><circle cx="224" cy="130" r="2.5" fill="#fff"/>
+<circle cx="165" cy="152" r="9" fill="#ff8a80" opacity=".4"/><circle cx="235" cy="152" r="9" fill="#ff8a80" opacity=".4"/>
+<path d="M182 166 Q200 182 218 166" stroke="#fff" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

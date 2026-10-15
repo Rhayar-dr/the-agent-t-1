@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Casa simples ao entardecer"><title>Casa</title>
+<rect width="1280" height="720" fill="#ffe3b3"/><circle cx="1000" cy="200" r="80" fill="#ffb74d"/><ellipse cx="300" cy="150" rx="100" ry="28" fill="#fff4e0"/>
+<path d="M0 500 Q320 460 640 500 T1280 490 L1280 720 L0 720Z" fill="#9ccc65"/>
+<path d="M500 720 Q600 600 640 560 L700 560 Q700 620 800 720Z" fill="#e2c08d"/>
+<rect x="400" y="300" width="480" height="270" rx="10" fill="#f3d9b1"/><path d="M370 310 L640 160 L910 310Z" fill="#c1633b"/>
+<rect x="590" y="400" width="100" height="170" rx="50" fill="#7b4a26"/><circle cx="670" cy="490" r="7" fill="#ffd54f"/>
+<rect x="440" y="360" width="90" height="90" rx="12" fill="#ffe082"/><rect x="750" y="360" width="90" height="90" rx="12" fill="#ffe082"/>
+<path d="M485 360 V450 M440 405 H530 M795 360 V450 M750 405 H840" stroke="#8a5a33" stroke-width="6"/>
+<circle cx="200" cy="470" r="56" fill="#5ea05a"/><rect x="192" y="470" width="16" height="80" fill="#8a5a33"/>
+</svg>

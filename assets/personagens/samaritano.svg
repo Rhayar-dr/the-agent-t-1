@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 600" role="img" aria-label="Samaritano"><title>Samaritano</title>
+<ellipse cx="200" cy="574" rx="110" ry="16" fill="#000" opacity=".12"/>
+<rect x="165" y="470" width="28" height="90" rx="12" fill="#c68642"/><rect x="207" y="470" width="28" height="90" rx="12" fill="#c68642"/>
+<ellipse cx="172" cy="563" rx="26" ry="12" fill="#5b3a1e"/><ellipse cx="228" cy="563" rx="26" ry="12" fill="#5b3a1e"/>
+<path d="M130 230 Q200 205 270 230 L300 510 Q200 535 100 510Z" fill="#43a047"/>
+<path d="M120 225 Q70 340 95 490 L150 495 Q135 370 175 240Z" fill="#f5e6c8"/><path d="M280 225 Q330 340 305 490 L250 495 Q265 370 225 240Z" fill="#f5e6c8"/>
+<rect x="150" y="360" width="100" height="14" rx="7" fill="#c8a24b"/>
+<rect x="80" y="260" width="34" height="150" rx="17" fill="#43a047" transform="rotate(8 97 260)"/><rect x="286" y="260" width="34" height="150" rx="17" fill="#43a047" transform="rotate(-8 303 260)"/>
+<circle cx="86" cy="418" r="17" fill="#c68642"/><circle cx="314" cy="418" r="17" fill="#c68642"/>
+<rect x="184" y="190" width="32" height="45" rx="12" fill="#c68642"/>
+<circle cx="200" cy="130" r="62" fill="#c68642"/><circle cx="140" cy="135" r="11" fill="#c68642"/><circle cx="260" cy="135" r="11" fill="#c68642"/>
+<path d="M140 108 Q145 55 200 52 Q255 55 260 108 Q200 86 140 108Z" fill="#f2f2f2"/><rect x="144" y="100" width="112" height="9" rx="4" fill="#c8a24b"/>
+<path d="M154 150 Q160 212 200 216 Q240 212 246 150 Q226 184 200 184 Q174 184 154 150Z" fill="#1f1a17"/>
+<circle cx="178" cy="132" r="7" fill="#3b2a20"/><circle cx="222" cy="132" r="7" fill="#3b2a20"/><circle cx="180" cy="130" r="2.5" fill="#fff"/><circle cx="224" cy="130" r="2.5" fill="#fff"/>
+<circle cx="165" cy="152" r="9" fill="#ff8a80" opacity=".4"/><circle cx="235" cy="152" r="9" fill="#ff8a80" opacity=".4"/>
+<path d="M184 166 Q200 180 216 166" stroke="#f5e6c8" stroke-width="5" fill="none" stroke-linecap="round"/>
+</svg>

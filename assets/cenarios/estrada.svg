@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-label="Estrada entre montanhas"><title>Estrada</title>
+<rect width="1280" height="720" fill="#bfe6ff"/><circle cx="1050" cy="120" r="70" fill="#ffd54f"/>
+<ellipse cx="260" cy="130" rx="110" ry="34" fill="#fff"/><ellipse cx="330" cy="150" rx="80" ry="28" fill="#fff"/><ellipse cx="700" cy="90" rx="90" ry="28" fill="#fff"/>
+<path d="M0 420 L220 190 L430 400 L620 230 L860 430 L1060 240 L1280 420 L1280 720 L0 720Z" fill="#a5b8d9"/>
+<path d="M0 480 L180 330 L360 470 L560 330 L760 480 L980 340 L1280 500 L1280 720 L0 720Z" fill="#8fc48a"/>
+<path d="M0 560 Q400 520 640 540 T1280 520 L1280 720 L0 720Z" fill="#6fb06a"/>
+<path d="M520 720 Q600 600 560 540 Q540 500 700 470 L760 475 Q640 520 700 560 Q780 620 960 720Z" fill="#e2c08d"/>
+<circle cx="150" cy="620" r="40" fill="#5ea05a"/><rect x="144" y="620" width="12" height="50" fill="#8a5a33"/>
+<circle cx="1120" cy="610" r="46" fill="#5ea05a"/><rect x="1114" y="610" width="12" height="60" fill="#8a5a33"/>
+</svg>
