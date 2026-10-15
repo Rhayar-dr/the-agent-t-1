@@ -1,0 +1,52 @@
+{
+  "id": "bom-samaritano",
+  "titulo": "O Bom Samaritano",
+  "referencia_biblica": "Lucas 10:25-37",
+  "faixa_etaria": "4-10",
+  "valor_central": "bondade",
+  "versiculo_chave": { "texto": "Ame o seu próximo como a si mesmo.", "referencia": "Lucas 10:27" },
+  "resumo": "Jesus contou a história de um homem que foi machucado no caminho. Muitos passaram sem ajudar, mas um samaritano parou, cuidou dele e mostrou o que é amar o próximo.",
+  "personagens": [
+    { "id": "jesus", "nome": "Jesus", "descricao_visual": "homem gentil, sorriso calmo, túnica clara e manto azul" },
+    { "id": "viajante", "nome": "Viajante", "descricao_visual": "homem de túnica marrom simples, com uma bolsa de viagem" },
+    { "id": "samaritano", "nome": "Samaritano", "descricao_visual": "homem bondoso de túnica verde, com um burrinho" }
+  ],
+  "cenas": [
+    { "numero": 1, "narracao": "Um dia, Jesus contou uma história muito especial.", "descricao_visual": "Jesus sentado numa pedra, crianças e adultos ouvindo ao redor, dia ensolarado", "personagens": ["jesus"], "emocao": "calma", "duracao_seg": 6 },
+    { "numero": 2, "narracao": "Um homem viajava por uma estrada. No caminho, ele se machucou e ficou caído, precisando de ajuda.", "descricao_visual": "estrada de terra entre montanhas, viajante sentado no chão com o joelho enfaixado, expressão triste", "personagens": ["viajante"], "emocao": "triste", "duracao_seg": 8 },
+    { "numero": 3, "narracao": "Algumas pessoas passaram por ali, mas não pararam para ajudar.", "descricao_visual": "duas pessoas caminhando pelo outro lado da estrada, olhando para longe", "personagens": ["viajante"], "emocao": "triste", "duracao_seg": 7 },
+    { "numero": 4, "narracao": "Então chegou um samaritano. Ele viu o homem e sentiu compaixão.", "descricao_visual": "samaritano com seu burrinho se aproximando do viajante, olhar carinhoso", "personagens": ["samaritano", "viajante"], "emocao": "surpresa", "duracao_seg": 7 },
+    { "numero": 5, "narracao": "Ele cuidou dos machucados, colocou o homem no seu burrinho e o levou para uma hospedaria.", "dialogos": [{ "personagem": "samaritano", "fala": "Não se preocupe, eu vou cuidar de você!" }], "descricao_visual": "samaritano ajudando o viajante a subir no burrinho, caminho até uma casinha iluminada", "personagens": ["samaritano", "viajante"], "emocao": "alegre", "duracao_seg": 9 },
+    { "numero": 6, "narracao": "Jesus perguntou: quem foi o bom vizinho? Aquele que ajudou! E Jesus disse: vá e faça o mesmo.", "descricao_visual": "Jesus sorrindo e apontando com carinho para as crianças", "personagens": ["jesus"], "emocao": "alegre", "duracao_seg": 9 }
+  ],
+  "licao": "Amar o próximo é ajudar quem precisa, mesmo quem é diferente de nós.",
+  "perguntas": [
+    { "pergunta": "O que aconteceu com o viajante?", "opcoes": ["Ele se machucou no caminho", "Ele ganhou um presente", "Ele foi pescar"], "correta": 0, "explicacao": "O viajante se machucou e precisava de ajuda." },
+    { "pergunta": "Quem parou para ajudar?", "opcoes": ["Ninguém", "O samaritano", "Um leão"], "correta": 1, "explicacao": "O samaritano parou e cuidou dele com amor." },
+    { "pergunta": "O que Jesus nos ensina com essa história?", "opcoes": ["Ajudar só os amigos", "Amar e ajudar o próximo", "Passar longe de quem precisa"], "correta": 1, "explicacao": "Jesus quer que a gente ame e ajude todas as pessoas." }
+  ],
+  "escolhas_bondade": [
+    { "situacao": "Um colega caiu no recreio e derrubou o lanche.", "opcoes": [
+      { "texto": "Ajudar a levantar e dividir meu lanche", "bondosa": true, "feedback": "Muito bem! Você foi um bom samaritano!" },
+      { "texto": "Rir e continuar brincando", "bondosa": false, "feedback": "Hmm, como será que ele se sentiu? Tente de novo!" }
+    ] },
+    { "situacao": "Sua irmã está triste porque perdeu o brinquedo favorito.", "opcoes": [
+      { "texto": "Ajudar a procurar e consolar minha irmã", "bondosa": true, "feedback": "Que bonito! Seu carinho fez diferença para ela." },
+      { "texto": "Dizer que não é problema meu", "bondosa": false, "feedback": "Tente de novo! Quem ama também percebe quando o outro precisa de ajuda." }
+    ] },
+    { "situacao": "Um novo aluno chegou na escola e está sozinho no intervalo.", "opcoes": [
+      { "texto": "Convidar para brincar comigo", "bondosa": true, "feedback": "Muito bem! Você fez um amigo se sentir acolhido." },
+      { "texto": "Ficar olhando de longe e não falar nada", "bondosa": false, "feedback": "Tente de novo! Um sorriso e um convite podem mudar o dia de alguém." }
+    ] }
+  ],
+  "atividade_organizacao": {
+    "titulo": "Kit de primeiros socorros do samaritano",
+    "instrucoes": "Ajude o samaritano a guardar cada coisa no lugar certo da bolsa.",
+    "itens": [
+      { "item": "curativo", "lugar": "caixinha" },
+      { "item": "garrafa de água", "lugar": "bolso lateral" },
+      { "item": "pão", "lugar": "cesta" }
+    ]
+  },
+  "oracao_curta": "Querido Jesus, me ajude a ver quem precisa e a ser bondoso todos os dias. Amém."
+}

@@ -1,0 +1,61 @@
+{
+  "id": "arca-de-noe",
+  "titulo": "A Arca de Noé",
+  "referencia_biblica": "Gênesis 6–9",
+  "faixa_etaria": "4-6",
+  "valor_central": "obediência e organização",
+  "versiculo_chave": { "texto": "Assim fez Noé; conforme tudo quanto Deus lhe ordenara, assim fez.", "referencia": "Gênesis 6:22" },
+  "resumo": "Deus pediu a Noé que construísse uma arca grande. Noé obedeceu com alegria e, com a família, organizou os animais de dois em dois. Quando a chuva passou, todos saíram em segurança.",
+  "personagens": [
+    { "id": "noe", "nome": "Noé", "descricao_visual": "homem idoso e gentil, barba branca, túnica bege e cinto de corda" },
+    { "id": "familia-noe", "nome": "Família de Noé", "descricao_visual": "esposa, três filhos e noras, roupas simples em tons de bege e azul, sorrisos de quem trabalha junto" },
+    { "id": "animais", "nome": "Animais", "descricao_visual": "pares de animais coloridos e amigáveis (leão, elefante, coelho, pato, ovelha) andando com calma" }
+  ],
+  "cenas": [
+    { "numero": 1, "narracao": "Havia um homem chamado Noé. Ele amava a Deus e queria obedecer.", "descricao_visual": "Noé sorrindo num jardim ensolarado, com túnica bege e cinto de corda", "personagens": ["noe"], "emocao": "alegre", "duracao_seg": 6 },
+    { "numero": 2, "narracao": "Um dia, Deus pediu que Noé construísse uma arca bem grande.", "dialogos": [{ "personagem": "noe", "fala": "Sim, eu vou fazer!" }], "descricao_visual": "Noé de pé, com a mão no peito, diante de um terreno vazio e um céu que começa a escurecer", "personagens": ["noe"], "emocao": "surpresa", "duracao_seg": 7 },
+    { "numero": 3, "narracao": "Noé e os filhos trabalharam juntos. Cada um tinha uma tarefa, e tudo era feito com cuidado.", "descricao_visual": "Noé e três filhos serrando madeira e pregando tábuas numa arca grande, serragem no chão", "personagens": ["noe", "familia-noe"], "emocao": "alegre", "duracao_seg": 8 },
+    { "numero": 4, "narracao": "Quando a arca ficou pronta, os animais começaram a chegar, de dois em dois.", "descricao_visual": "animais caminhando em fila, de dois em dois, subindo a rampa de madeira da arca", "personagens": ["animais"], "emocao": "surpresa", "duracao_seg": 8 },
+    { "numero": 5, "narracao": "Noé organizou cada casal no seu lugar, com carinho e paciência.", "descricao_visual": "Noé ajudando um casal de leões a entrar em um compartimento organizado, com fileiras de animais ao fundo", "personagens": ["noe", "animais"], "emocao": "calma", "duracao_seg": 8 },
+    { "numero": 6, "narracao": "A chuva caiu por muitos dias. Dentro da arca, todos estavam seguros e tranquilos.", "descricao_visual": "vista de dentro da arca, com uma pequena janela mostrando chuva lá fora; família e animais tranquilos", "personagens": ["familia-noe", "animais"], "emocao": "calma", "duracao_seg": 8 },
+    { "numero": 7, "narracao": "Quando a chuva parou, a arca pousou em segurança. Noé agradeceu a Deus.", "descricao_visual": "Noé ajoelhado em oração ao lado da arca, céu azul depois da chuva", "personagens": ["noe"], "emocao": "alegre", "duracao_seg": 8 },
+    { "numero": 8, "narracao": "Deus prometeu que nunca mais haveria um dilúvio assim. Como sinal, apareceu um arco-íris no céu.", "descricao_visual": "arco-íris sobre a arca, animais e família saindo alegres", "personagens": ["noe", "familia-noe", "animais"], "emocao": "alegre", "duracao_seg": 9 }
+  ],
+  "licao": "Quando obedecemos a Deus e nos organizamos com cuidado, fazemos coisas boas e protegemos quem amamos.",
+  "perguntas": [
+    { "pergunta": "O que Deus pediu para Noé fazer?", "opcoes": ["Construir uma arca", "Plantar um jardim", "Pintar um quadro"], "correta": 0, "explicacao": "Deus pediu que Noé construísse uma arca grande." },
+    { "pergunta": "Como os animais entraram na arca?", "opcoes": ["Sozinhos e correndo", "De dois em dois", "Todos de uma vez"], "correta": 1, "explicacao": "Os animais entraram em pares, de dois em dois." },
+    { "pergunta": "Por que é bom organizar as coisas?", "opcoes": ["Para ficar tudo bagunçado", "Para cada coisa ficar no seu lugar", "Para esquecer onde estão"], "correta": 1, "explicacao": "Quando cada coisa está no lugar, fica mais fácil cuidar de tudo." },
+    { "pergunta": "O que é obedecer a Deus?", "opcoes": ["Fazer o que Deus pede, com amor", "Fazer só quando dá vontade", "Não fazer nada"], "correta": 0, "explicacao": "Noé obedeceu com alegria, fazendo o que Deus pediu." }
+  ],
+  "escolhas_bondade": [
+    { "situacao": "Sua mãe pediu para você guardar os brinquedos antes do almoço.", "opcoes": [
+      { "texto": "Guardar tudo com cuidado, no lugar certo", "bondosa": true, "feedback": "Muito bem! Você obedeceu e organizou, como Noé!" },
+      { "texto": "Deixar tudo espalhado para depois", "bondosa": false, "feedback": "Tente de novo! Organizar ajuda a casa a ficar em paz." }
+    ] },
+    { "situacao": "Seu grupo está fazendo um desenho juntos, e cada um tem uma parte.", "opcoes": [
+      { "texto": "Fazer minha parte e ajudar o colega que está atrasado", "bondosa": true, "feedback": "Que bom! Trabalhar junto deixa tudo mais bonito." },
+      { "texto": "Fazer só a minha e ir brincar", "bondosa": false, "feedback": "Hmm, o desenho ainda não está pronto. Tente de novo!" }
+    ] },
+    { "situacao": "Na hora de arrumar a sala, um colega não consegue carregar a caixa sozinho.", "opcoes": [
+      { "texto": "Ajudar a carregar a caixa", "bondosa": true, "feedback": "Muito bem! Você é um bom ajudante!" },
+      { "texto": "Fingir que não viu", "bondosa": false, "feedback": "Como será que ele se sentiu? Tente de novo!" }
+    ] }
+  ],
+  "atividade_organizacao": {
+    "titulo": "Organiza a Arca",
+    "instrucoes": "Ajude Noé a levar os animais para a arca, de dois em dois. Arraste cada casal para o lugar certo: animais grandes no fundo, animais médios no meio e animais pequenos na frente. Cada casal deve ficar junto.",
+    "itens": [
+      { "item": "casal de leões", "lugar": "fundo da arca (animais grandes)" },
+      { "item": "casal de elefantes", "lugar": "fundo da arca (animais grandes)" },
+      { "item": "casal de girafas", "lugar": "fundo da arca (animais grandes)" },
+      { "item": "casal de cavalos", "lugar": "meio da arca (animais médios)" },
+      { "item": "casal de vacas", "lugar": "meio da arca (animais médios)" },
+      { "item": "casal de ovelhas", "lugar": "meio da arca (animais médios)" },
+      { "item": "casal de coelhos", "lugar": "frente da arca (animais pequenos)" },
+      { "item": "casal de patos", "lugar": "frente da arca (animais pequenos)" },
+      { "item": "casal de passarinhos", "lugar": "frente da arca (animais pequenos)" }
+    ]
+  },
+  "oracao_curta": "Querido Deus, obrigado por cuidar de nós. Ajuda-me a obedecer com alegria e a organizar minhas coisas com carinho. Amém."
+}

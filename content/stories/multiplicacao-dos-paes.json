@@ -1,0 +1,55 @@
+{
+  "id": "multiplicacao-dos-paes",
+  "titulo": "A Multiplicação dos Pães",
+  "referencia_biblica": "Mateus 14:13-21",
+  "faixa_etaria": "4-10",
+  "valor_central": "partilha",
+  "versiculo_chave": { "texto": "Não precisam ir embora; dêem-lhes vocês mesmos de comer.", "referencia": "Mateus 14:16" },
+  "resumo": "Muitas pessoas seguiram Jesus e ficaram com fome. Um menino tinha apenas cinco pães e dois peixinhos e ofereceu tudo. Jesus abençoou o pouco, todos comeram e ainda sobrou.",
+  "personagens": [
+    { "id": "jesus", "nome": "Jesus", "descricao_visual": "homem gentil, sorriso calmo, túnica clara e manto azul" },
+    { "id": "menino", "nome": "Menino", "descricao_visual": "criança sorridente, túnica simples amarela, segurando uma cesta com pães e peixinhos" },
+    { "id": "discipulos", "nome": "Discípulos", "descricao_visual": "homens de túnicas simples, um deles com a mão na cabeça, pensando no problema" }
+  ],
+  "cenas": [
+    { "numero": 1, "narracao": "Jesus estava num lugar tranquilo, cuidando de muitas pessoas com amor.", "descricao_visual": "Jesus sentado numa colina, multidão ouvindo ao redor, dia de sol", "personagens": ["jesus"], "emocao": "calma", "duracao_seg": 7 },
+    { "numero": 2, "narracao": "O dia foi passando, e todos ficaram com fome. Os amigos de Jesus acharam que era hora de as pessoas irem embora.", "descricao_visual": "discípulos olhando para a multidão, céu começando a ficar alaranjado", "personagens": ["discipulos"], "emocao": "triste", "duracao_seg": 8 },
+    { "numero": 3, "narracao": "Jesus disse: não precisam ir embora. Vocês mesmos podem ajudar a alimentar essas pessoas.", "dialogos": [{ "personagem": "jesus", "fala": "Não precisam ir embora. Dêem vocês mesmos de comer!" }], "descricao_visual": "Jesus apontando com carinho para os discípulos, que olham uns para os outros", "personagens": ["jesus", "discipulos"], "emocao": "surpresa", "duracao_seg": 8 },
+    { "numero": 4, "narracao": "Um menino tinha uma cesta com cinco pães e dois peixinhos. Ele ofereceu tudo para Jesus.", "dialogos": [{ "personagem": "menino", "fala": "Pode usar o meu lanche!" }], "descricao_visual": "menino sorrindo e estendendo a cesta para Jesus", "personagens": ["menino", "jesus"], "emocao": "alegre", "duracao_seg": 9 },
+    { "numero": 5, "narracao": "Jesus agradeceu a Deus pelo alimento e começou a repartir os pães.", "descricao_visual": "Jesus de mãos erguidas em oração, pães e peixinhos sobre a mesa de pedra", "personagens": ["jesus"], "emocao": "calma", "duracao_seg": 8 },
+    { "numero": 6, "narracao": "Os discípulos distribuíram a comida. Todos comeram e ficaram satisfeitos.", "descricao_visual": "multidão sentada na grama, pessoas dividindo pão com quem está ao lado", "personagens": ["discipulos"], "emocao": "alegre", "duracao_seg": 8 },
+    { "numero": 7, "narracao": "Ainda sobraram doze cestos cheios! Ninguém ficou sem comer.", "descricao_visual": "doze cestos cheios de pão no chão, menino e discípulos sorrindo", "personagens": ["menino", "discipulos"], "emocao": "surpresa", "duracao_seg": 9 }
+  ],
+  "licao": "Quando dividimos o que temos com alegria, até um pouco pode alegrar muita gente.",
+  "perguntas": [
+    { "pergunta": "Quantos pães o menino tinha?", "opcoes": ["Dois", "Cinco", "Dez"], "correta": 1, "explicacao": "O menino tinha cinco pães e dois peixinhos." },
+    { "pergunta": "O que o menino fez com o lanche?", "opcoes": ["Escondeu", "Ofereceu para Jesus", "Jogou fora"], "correta": 1, "explicacao": "Ele ofereceu tudo para Jesus, com alegria." },
+    { "pergunta": "O que aconteceu com a comida?", "opcoes": ["Acabou logo", "Foi suficiente para todos", "Ninguém comeu"], "correta": 1, "explicacao": "Todos comeram, e ainda sobraram doze cestos." },
+    { "pergunta": "O que é partilhar?", "opcoes": ["Guardar tudo para mim", "Dividir o que tenho com outros", "Pedir mais sem dar nada"], "correta": 1, "explicacao": "Partilhar é dividir com quem precisa." }
+  ],
+  "escolhas_bondade": [
+    { "situacao": "No recreio, você tem uma bolacha e um colega não tem lanche.", "opcoes": [
+      { "texto": "Dividir a bolacha com ele", "bondosa": true, "feedback": "Que bonito! Você partilhou como o menino da história!" },
+      { "texto": "Comer tudo sem olhar para ele", "bondosa": false, "feedback": "Hmm, como será que ele se sentiu? Tente de novo!" }
+    ] },
+    { "situacao": "Seu brinquedo novo está na mesa, e uma criança quer brincar com ele.", "opcoes": [
+      { "texto": "Convidar para brincar junto", "bondosa": true, "feedback": "Muito bem! Brincar junto é muito mais divertido!" },
+      { "texto": "Guardar o brinquedo na mochila e não deixar ninguém ver", "bondosa": false, "feedback": "Tente de novo! Dividir faz a alegria crescer." }
+    ] },
+    { "situacao": "Na sala, sobrou só um lápis colorido, e dois colegas querem usar.", "opcoes": [
+      { "texto": "Combinar de usar um de cada vez", "bondosa": true, "feedback": "Ótima ideia! Todos podem desenhar." },
+      { "texto": "Pegar o lápis e não emprestar", "bondosa": false, "feedback": "Tente de novo! Pense em como o outro se sente." }
+    ] }
+  ],
+  "atividade_organizacao": {
+    "titulo": "Cesta de Partilha",
+    "instrucoes": "Organize a mesa para dividir a comida. Coloque os cinco pães e os dois peixinhos no centro. Depois, deixe um pão em cada lugar da mesa, sem faltar e sem sobrar, e guarde as sobras na cesta.",
+    "itens": [
+      { "item": "5 pães", "lugar": "cesta central" },
+      { "item": "2 peixinhos", "lugar": "prato central" },
+      { "item": "1 pão para cada pessoa da mesa", "lugar": "lugar de cada pessoa" },
+      { "item": "sobras de pão", "lugar": "cesta de sobra para levar para casa" }
+    ]
+  },
+  "oracao_curta": "Querido Jesus, obrigado pelo pão de cada dia. Ajuda-me a repartir o que tenho com quem precisa. Amém."
+}

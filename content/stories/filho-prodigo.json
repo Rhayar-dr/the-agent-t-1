@@ -1,0 +1,55 @@
+{
+  "id": "filho-prodigo",
+  "titulo": "O Filho que Voltou para Casa",
+  "referencia_biblica": "Lucas 15:11-32",
+  "faixa_etaria": "7-10",
+  "valor_central": "perdão",
+  "versiculo_chave": { "texto": "Quando ainda estava longe, seu pai o viu e, cheio de compaixão, correu ao seu encontro.", "referencia": "Lucas 15:20" },
+  "resumo": "Um filho pediu sua parte da herança, foi embora e gastou tudo. Arrependido, decidiu voltar para casa, e seu pai o recebeu com abraço e perdão. A história mostra que Deus sempre nos acolhe de volta.",
+  "personagens": [
+    { "id": "pai", "nome": "Pai", "descricao_visual": "homem de manto vermelho, sorriso acolhedor e braços abertos" },
+    { "id": "filho-mais-novo", "nome": "Filho mais novo", "descricao_visual": "jovem de túnica azul-clara, com uma pequena bolsa de viagem, expressão arrependida" },
+    { "id": "filho-mais-velho", "nome": "Filho mais velho", "descricao_visual": "jovem de túnica verde, braços cruzados, expressão de chateação" }
+  ],
+  "cenas": [
+    { "numero": 1, "narracao": "Um pai tinha dois filhos. O mais novo pediu a parte da herança e foi morar longe de casa.", "dialogos": [{ "personagem": "filho-mais-novo", "fala": "Pai, quero a minha parte agora." }], "descricao_visual": "pai entregando uma bolsa de moedas ao filho mais novo, em frente a uma casa de campo", "personagens": ["pai", "filho-mais-novo"], "emocao": "surpresa", "duracao_seg": 9 },
+    { "numero": 2, "narracao": "Ele gastou tudo sem pensar no futuro e ficou sem nada.", "descricao_visual": "filho sentado sozinho numa estrada, bolsa vazia no colo, expressão triste", "personagens": ["filho-mais-novo"], "emocao": "triste", "duracao_seg": 8 },
+    { "numero": 3, "narracao": "Ele passou fome e se sentiu sozinho. Então lembrou da casa do pai e decidiu voltar, pedindo perdão.", "dialogos": [{ "personagem": "filho-mais-novo", "fala": "Vou voltar e pedir perdão ao meu pai." }], "descricao_visual": "filho caminhando de volta por uma estrada de terra, olhando para o horizonte", "personagens": ["filho-mais-novo"], "emocao": "calma", "duracao_seg": 9 },
+    { "numero": 4, "narracao": "Quando ainda estava longe, o pai o viu, correu ao seu encontro e o abraçou com carinho.", "dialogos": [{ "personagem": "pai", "fala": "Que alegria você ter voltado!" }], "descricao_visual": "pai correndo na estrada e abraçando o filho, que se aproxima com a cabeça baixa", "personagens": ["pai", "filho-mais-novo"], "emocao": "alegre", "duracao_seg": 9 },
+    { "numero": 5, "narracao": "O pai pediu roupas novas e preparou uma festa para celebrar a volta do filho.", "descricao_visual": "família e empregados preparando uma mesa com comida, o filho com roupas novas sorrindo", "personagens": ["pai", "filho-mais-novo"], "emocao": "alegre", "duracao_seg": 8 },
+    { "numero": 6, "narracao": "O irmão mais velho ficou com raiva e não queria entrar. O pai foi conversar com ele com carinho.", "dialogos": [{ "personagem": "pai", "fala": "Você sempre esteve comigo, e eu te amo muito." }], "descricao_visual": "irmão mais velho de braços cruzados do lado de fora da casa, pai com a mão no ombro dele", "personagens": ["pai", "filho-mais-velho"], "emocao": "triste", "duracao_seg": 9 },
+    { "numero": 7, "narracao": "O pai explicou que era justo celebrar, porque o irmão que estava perdido tinha voltado para casa.", "descricao_visual": "pai e os dois filhos juntos na porta da casa, em clima de reconciliação", "personagens": ["pai", "filho-mais-novo", "filho-mais-velho"], "emocao": "calma", "duracao_seg": 9 }
+  ],
+  "licao": "Perdoar é abrir o coração e receber de volta quem errou, como Deus faz com cada um de nós.",
+  "perguntas": [
+    { "pergunta": "O que o filho mais novo fez?", "opcoes": ["Pediu a herança e foi embora", "Ficou em casa ajudando", "Construiu uma arca"], "correta": 0, "explicacao": "Ele pediu sua parte da herança e foi morar longe." },
+    { "pergunta": "Como o pai recebeu o filho que voltou?", "opcoes": ["Com perdão e abraço", "Fechou a porta", "Com bronca e silêncio"], "correta": 0, "explicacao": "O pai correu ao encontro do filho e o abraçou." },
+    { "pergunta": "Quando alguém erra e pede desculpas, o que podemos fazer?", "opcoes": ["Perdoar com amor", "Guardar rancor para sempre", "Nunca mais falar com a pessoa"], "correta": 0, "explicacao": "Perdoar é receber de volta quem se arrependeu." },
+    { "pergunta": "O que o irmão mais velho sentiu no começo?", "opcoes": ["Raiva", "Sono", "Medo de chuva"], "correta": 0, "explicacao": "Ele ficou com raiva, e o pai conversou com ele com carinho." }
+  ],
+  "escolhas_bondade": [
+    { "situacao": "Seu irmão quebrou, sem querer, o seu desenho favorito e pediu desculpas.", "opcoes": [
+      { "texto": "Dizer que tudo bem, eu perdoo, e ajudar a fazer outro desenho", "bondosa": true, "feedback": "Muito bem! Perdoar com carinho deixa a família mais unida." },
+      { "texto": "Dizer que nunca mais vou brincar com ele", "bondosa": false, "feedback": "Tente de novo! Perdão abre a porta para a paz." }
+    ] },
+    { "situacao": "Um colega espalhou uma mentira sobre você, depois se arrependeu e pediu desculpas.", "opcoes": [
+      { "texto": "Aceitar o pedido de desculpas e voltar a brincar com ele", "bondosa": true, "feedback": "Que bonito! Você perdoou como o pai da história." },
+      { "texto": "Contar para todo mundo o que ele fez", "bondosa": false, "feedback": "Hmm, como será que ele se sentiu? Tente de novo!" }
+    ] },
+    { "situacao": "Você errou e sabe que magoou sua mãe.", "opcoes": [
+      { "texto": "Pedir desculpas com sinceridade e ajudar em casa", "bondosa": true, "feedback": "Muito bem! Pedir desculpas é um ato de coragem." },
+      { "texto": "Fingir que nada aconteceu", "bondosa": false, "feedback": "Tente de novo! Pedir desculpas ajuda o coração a ficar leve." }
+    ] }
+  ],
+  "atividade_organizacao": {
+    "titulo": "Mala de Volta para Casa",
+    "instrucoes": "Ajude o filho a arrumar a mala para voltar para casa. Coloque cada coisa no lugar certo, com as roupas limpas dobradas na mala e os itens menores nos bolsos.",
+    "itens": [
+      { "item": "roupas limpas dobradas", "lugar": "parte de baixo da mala" },
+      { "item": "sapatos", "lugar": "bolsa lateral" },
+      { "item": "moedas que sobraram", "lugar": "bolsinha pequena" },
+      { "item": "carta de pedido de desculpas", "lugar": "bolso da frente" }
+    ]
+  },
+  "oracao_curta": "Querido Deus, obrigado por nos perdoar sempre. Ajuda-me a perdoar quem me magoou, com amor. Amém."
+}

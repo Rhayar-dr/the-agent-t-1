@@ -1,0 +1,6 @@
+[
+  { "id": "bom-samaritano", "titulo": "O Bom Samaritano", "valor_central": "bondade", "faixa_etaria": "4-10", "arquivo": "bom-samaritano.json" },
+  { "id": "arca-de-noe", "titulo": "A Arca de Noé", "valor_central": "obediência e organização", "faixa_etaria": "4-6", "arquivo": "arca-de-noe.json" },
+  { "id": "multiplicacao-dos-paes", "titulo": "A Multiplicação dos Pães", "valor_central": "partilha", "faixa_etaria": "4-10", "arquivo": "multiplicacao-dos-paes.json" },
+  { "id": "filho-prodigo", "titulo": "O Filho que Voltou para Casa", "valor_central": "perdão", "faixa_etaria": "7-10", "arquivo": "filho-prodigo.json" }
+]
