@@ -1,0 +1,53 @@
+{
+  "id": "jesus-abencoa-criancas",
+  "titulo": "Jesus Abençoa as Crianças",
+  "referencia_biblica": "Marcos 10:13-16",
+  "faixa_etaria": "4-6",
+  "valor_central": "bondade e acolhimento",
+  "versiculo_chave": { "texto": "Deixem vir a mim as crianças e não as impeçam, pois o reino de Deus pertence aos que são semelhantes a elas.", "referencia": "Marcos 10:14", "traducao": "NVI" },
+  "resumo": "Algumas pessoas levaram suas crianças até Jesus, mas os amigos dele quiseram afastá-las. Jesus disse para deixarem as crianças vir até ele. Ele as abraçou e abençoou, mostrando que todas são importantes.",
+  "personagens": [
+    { "id": "jesus", "nome": "Jesus", "descricao_visual": "homem gentil, sorriso calmo, túnica clara e manto azul" },
+    { "id": "criancas", "nome": "Crianças", "descricao_visual": "grupo de crianças de roupas simples, sorrindo, de mãos dadas" },
+    { "id": "discipulos", "nome": "Discípulos", "descricao_visual": "homens de túnicas simples, um deles com a mão levantada para afastar as crianças, com expressão apressada" }
+  ],
+  "cenas": [
+    { "numero": 1, "narracao": "Jesus caminhava por um caminho de terra com seus amigos.", "descricao_visual": "Jesus caminhando com um grupo de amigos por uma estrada de terra, dia ensolarado", "cenario": "estrada", "personagens": ["jesus", "discipulos"], "emocao": "calma", "duracao_seg": 6 },
+    { "numero": 2, "narracao": "Algumas pessoas trouxeram as crianças para Jesus conhecer.", "descricao_visual": "adultos chegando com crianças sorridentes, caminhando em direção a Jesus", "cenario": "colina-multidao", "personagens": ["criancas", "jesus"], "emocao": "alegre", "duracao_seg": 7 },
+    { "numero": 3, "narracao": "Mas alguns amigos de Jesus acharam que ele estava ocupado e tentaram afastar as crianças.", "descricao_visual": "discípulos com a mão levantada, afastando as crianças, expressão apressada", "cenario": "colina-multidao", "personagens": ["discipulos", "criancas"], "emocao": "triste", "duracao_seg": 8 },
+    { "numero": 4, "narracao": "Jesus viu aquilo e disse que as crianças podiam vir até ele.", "dialogos": [{ "personagem": "jesus", "fala": "Deixem as crianças vir a mim!" }], "descricao_visual": "Jesus de braço estendido, pedindo com carinho que as crianças se aproximem", "cenario": "colina-multidao", "personagens": ["jesus", "discipulos"], "emocao": "surpresa", "duracao_seg": 8 },
+    { "numero": 5, "narracao": "Jesus pegou cada criança no colo, colocou as mãos sobre elas e as abençoou.", "descricao_visual": "Jesus sorrindo, com crianças no colo, mãos sobre a cabeça delas", "cenario": "colina-multidao", "personagens": ["jesus", "criancas"], "emocao": "alegre", "duracao_seg": 9 },
+    { "numero": 6, "narracao": "Jesus mostrou que todas as crianças são muito importantes para Deus.", "descricao_visual": "Jesus rodeado de crianças felizes, sob um céu azul", "cenario": "colina-multidao", "personagens": ["jesus", "criancas"], "emocao": "calma", "duracao_seg": 8 }
+  ],
+  "licao": "Todas as pessoas são importantes, e devemos acolher quem quer chegar perto de nós.",
+  "perguntas": [
+    { "pergunta": "Quem trouxe as crianças para Jesus?", "opcoes": ["Algumas pessoas", "Um leão", "Ninguém"], "correta": 0, "explicacao": "Algumas pessoas levaram as crianças até Jesus." },
+    { "pergunta": "O que Jesus disse aos amigos que queriam afastar as crianças?", "opcoes": ["Mandem as crianças embora", "Deixem as crianças vir a mim", "Não falem nada"], "correta": 1, "explicacao": "Jesus pediu que deixassem as crianças chegar perto dele." },
+    { "pergunta": "Como Jesus tratou as crianças?", "opcoes": ["Com carinho e bênção", "Com pressa", "Com bronca"], "correta": 0, "explicacao": "Jesus as abraçou e abençoou com carinho." }
+  ],
+  "escolhas_bondade": [
+    { "situacao": "Um colega novo quer brincar, mas alguns colegas dizem que ele não pode entrar.", "opcoes": [
+      { "texto": "Convidar o colega a brincar com a gente", "bondosa": true, "feedback": "Muito bem! Você acolheu o colega, como Jesus acolheu as crianças." },
+      { "texto": "Dizer que ele não pode entrar", "bondosa": false, "feedback": "Tente de novo! Todos merecem ser convidados." }
+    ] },
+    { "situacao": "Uma criança menor quer participar do jogo e está esperando na fila.", "opcoes": [
+      { "texto": "Deixar ela entrar e explicar as regras", "bondosa": true, "feedback": "Que bom! Explicar com paciência ajuda todo mundo a participar." },
+      { "texto": "Dizer que ela é pequena demais", "bondosa": false, "feedback": "Hmm, como será que ela se sentiu? Tente de novo!" }
+    ] },
+    { "situacao": "Você viu um colega sozinho na fila, e os outros o deixaram de lado.", "opcoes": [
+      { "texto": "Ir até ele e chamar para a fila junto", "bondosa": true, "feedback": "Muito bem! Você fez ele se sentir acolhido." },
+      { "texto": "Fingir que não viu", "bondosa": false, "feedback": "Tente de novo! Um convite simples faz muita diferença." }
+    ] }
+  ],
+  "atividade_organizacao": {
+    "titulo": "Roda de Acolhimento",
+    "instrucoes": "Organize as crianças em uma roda. Cada criança tem um lugar, e ninguém fica de fora. Coloque Jesus no centro da roda e as crianças em volta, de mãos dadas.",
+    "itens": [
+      { "item": "Jesus", "lugar": "centro da roda" },
+      { "item": "criança que chegou primeiro", "lugar": "lugar ao lado de Jesus" },
+      { "item": "criança nova que chegou", "lugar": "lugar ao lado de um amigo" },
+      { "item": "criança que estava sozinha", "lugar": "dentro da roda, junto com os outros" }
+    ]
+  },
+  "oracao_curta": "Querido Jesus, obrigado por amar todas as crianças. Ajuda-me a acolher quem está sozinho e a ser gentil com todos. Amém."
+}

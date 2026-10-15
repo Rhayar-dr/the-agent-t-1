@@ -1,0 +1,54 @@
+{
+  "id": "zaqueu",
+  "titulo": "Zaqueu, o Cobrador Generoso",
+  "referencia_biblica": "Lucas 19:1-10",
+  "faixa_etaria": "7-10",
+  "valor_central": "partilha",
+  "versiculo_chave": { "texto": "Pois o Filho do homem veio buscar e salvar o que estava perdido.", "referencia": "Lucas 19:10", "traducao": "NVI" },
+  "resumo": "Zaqueu era um cobrador de impostos e era baixinho. Para ver Jesus, subiu numa figueira, e Jesus o chamou pelo nome para ir à sua casa. Zaqueu decidiu partilhar metade dos seus bens com os pobres e reparar o que tinha tirado de alguém.",
+  "personagens": [
+    { "id": "zaqueu", "nome": "Zaqueu", "descricao_visual": "homem baixinho, túnica marrom e bolsa de moedas na cintura" },
+    { "id": "jesus", "nome": "Jesus", "descricao_visual": "homem gentil, sorriso calmo, túnica clara e manto azul" },
+    { "id": "multidao", "nome": "Multidão", "descricao_visual": "pessoas de roupas simples, algumas murmurando e outras curiosas" }
+  ],
+  "cenas": [
+    { "numero": 1, "narracao": "Zaqueu queria muito ver Jesus, mas era baixinho e a multidão era grande.", "descricao_visual": "Zaqueu na ponta dos pés, tentando olhar por cima de uma multidão, expressão de frustração", "cenario": "colina-multidao", "personagens": ["zaqueu", "multidao"], "emocao": "triste", "duracao_seg": 8 },
+    { "numero": 2, "narracao": "Então ele correu e subiu numa figueira para conseguir ver Jesus.", "descricao_visual": "Zaqueu subindo em uma figueira, com folhas ao redor e um sorriso de esperança", "cenario": "campo-galileia", "personagens": ["zaqueu"], "emocao": "alegre", "duracao_seg": 8 },
+    { "numero": 3, "narracao": "Jesus olhou para cima, viu Zaqueu e o chamou pelo nome.", "dialogos": [{ "personagem": "jesus", "fala": "Zaqueu, desça depressa! Hoje quero ficar na sua casa." }], "descricao_visual": "Jesus olhando para cima, em direção a Zaqueu na figueira, com as mãos abertas", "cenario": "campo-galileia", "personagens": ["jesus", "zaqueu"], "emocao": "surpresa", "duracao_seg": 9 },
+    { "numero": 4, "narracao": "Algumas pessoas reclamaram, porque Jesus foi à casa de um cobrador de impostos.", "descricao_visual": "pessoas da multidão cochichando e apontando, com expressões de desaprovação", "cenario": "colina-multidao", "personagens": ["multidao"], "emocao": "triste", "duracao_seg": 8 },
+    { "numero": 5, "narracao": "Zaqueu ficou feliz e disse que daria metade dos seus bens aos pobres e devolveria quatro vezes mais o que tinha tirado de alguém.", "dialogos": [{ "personagem": "zaqueu", "fala": "Vou dar metade dos meus bens aos pobres!" }], "descricao_visual": "Zaqueu de pé, entregando moedas a pessoas simples, com um sorriso de alegria", "cenario": "casa", "personagens": ["zaqueu", "multidao"], "emocao": "alegre", "duracao_seg": 9 },
+    { "numero": 6, "narracao": "Jesus disse que a salvação tinha chegado àquela casa, porque Zaqueu também era filho de Abraão.", "descricao_visual": "Jesus sentado à mesa com Zaqueu, em clima de acolhimento", "cenario": "casa", "personagens": ["jesus", "zaqueu"], "emocao": "calma", "duracao_seg": 9 },
+    { "numero": 7, "narracao": "Zaqueu aprendeu que partilhar traz alegria. Jesus veio buscar quem estava perdido.", "descricao_visual": "Zaqueu, Jesus e as pessoas ajudadas celebrando juntos", "cenario": "festa", "personagens": ["zaqueu", "jesus", "multidao"], "emocao": "alegre", "duracao_seg": 9 }
+  ],
+  "licao": "Quando partilhamos e reparamos nossos erros, mostramos o amor de Deus na prática.",
+  "perguntas": [
+    { "pergunta": "Por que Zaqueu subiu na figueira?", "opcoes": ["Para pegar frutas", "Para ver Jesus, pois era baixinho", "Para fugir"], "correta": 1, "explicacao": "Como era baixinho, ele subiu na figueira para conseguir ver Jesus." },
+    { "pergunta": "O que Jesus fez quando viu Zaqueu?", "opcoes": ["Ignorou", "Chamou pelo nome e foi à casa dele", "Foi embora"], "correta": 1, "explicacao": "Jesus chamou Zaqueu pelo nome e quis ficar na casa dele." },
+    { "pergunta": "O que Zaqueu decidiu fazer?", "opcoes": ["Ficar com tudo", "Partilhar e devolver o que tinha tirado", "Mudar de cidade"], "correta": 1, "explicacao": "Zaqueu decidiu partilhar e reparar o que tinha tirado de alguém." },
+    { "pergunta": "O que Jesus disse sobre a casa de Zaqueu?", "opcoes": ["Que a salvação chegou àquela casa", "Que ele deveria ir embora", "Que nada tinha mudado"], "correta": 0, "explicacao": "Jesus disse que a salvação tinha chegado àquela casa." }
+  ],
+  "escolhas_bondade": [
+    { "situacao": "Você ganhou um presente especial, e um colega ficou sem nada.", "opcoes": [
+      { "texto": "Dividir o presente com ele", "bondosa": true, "feedback": "Muito bem! Você partilhou, como Zaqueu fez." },
+      { "texto": "Guardar tudo só para mim", "bondosa": false, "feedback": "Tente de novo! Partilhar faz a alegria crescer." }
+    ] },
+    { "situacao": "Você pegou algo emprestado sem pedir e percebeu o erro.", "opcoes": [
+      { "texto": "Devolver e pedir desculpas", "bondosa": true, "feedback": "Que bonito! Reparar o erro mostra coragem." },
+      { "texto": "Fingir que não foi você", "bondosa": false, "feedback": "Tente de novo! Reparar o erro traz paz." }
+    ] },
+    { "situacao": "Sua turma vai juntar alimentos para uma família que precisa.", "opcoes": [
+      { "texto": "Levar algo de casa e ajudar a organizar", "bondosa": true, "feedback": "Muito bem! Ajudar em grupo faz diferença na vida de alguém." },
+      { "texto": "Ficar de fora sem ajudar", "bondosa": false, "feedback": "Tente de novo! Todos podem ajudar de algum jeito." }
+    ] }
+  ],
+  "atividade_organizacao": {
+    "titulo": "Partilha de Zaqueu",
+    "instrucoes": "Organize as moedas de Zaqueu. Uma parte fica com ele, e outra vai para as pessoas que precisam. As moedas devolvidas (quatro vezes mais) vão para a bolsa de devolução. Não esqueça nenhuma.",
+    "itens": [
+      { "item": "moedas para devolver (quatro vezes mais)", "lugar": "bolsa de devolução" },
+      { "item": "metade dos bens", "lugar": "caixa para os pobres" },
+      { "item": "moedas que ficam com Zaqueu", "lugar": "bolsa dele" }
+    ]
+  },
+  "oracao_curta": "Querido Jesus, obrigado por me procurar e me amar. Ajuda-me a partilhar com alegria e a reparar meus erros. Amém."
+}

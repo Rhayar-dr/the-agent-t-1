@@ -2,9 +2,9 @@
   "id": "arca-de-noe",
   "titulo": "A Arca de Noé",
   "referencia_biblica": "Gênesis 6–9",
-  "faixa_etaria": "4-6",
+  "faixa_etaria": "4-10",
   "valor_central": "obediência e organização",
-  "versiculo_chave": { "texto": "Assim fez Noé; conforme tudo quanto Deus lhe ordenara, assim fez.", "referencia": "Gênesis 6:22" },
+  "versiculo_chave": { "texto": "Noé fez tudo exatamente como Deus lhe tinha ordenado.", "referencia": "Gênesis 6:22", "traducao": "NVI" },
   "resumo": "Deus pediu a Noé que construísse uma arca grande. Noé obedeceu com alegria e, com a família, organizou os animais de dois em dois. Quando a chuva passou, todos saíram em segurança.",
   "personagens": [
     { "id": "noe", "nome": "Noé", "descricao_visual": "homem idoso e gentil, barba branca, túnica bege e cinto de corda" },
@@ -12,14 +12,14 @@
     { "id": "animais", "nome": "Animais", "descricao_visual": "pares de animais coloridos e amigáveis (leão, elefante, coelho, pato, ovelha) andando com calma" }
   ],
   "cenas": [
-    { "numero": 1, "narracao": "Havia um homem chamado Noé. Ele amava a Deus e queria obedecer.", "descricao_visual": "Noé sorrindo num jardim ensolarado, com túnica bege e cinto de corda", "personagens": ["noe"], "emocao": "alegre", "duracao_seg": 6 },
-    { "numero": 2, "narracao": "Um dia, Deus pediu que Noé construísse uma arca bem grande.", "dialogos": [{ "personagem": "noe", "fala": "Sim, eu vou fazer!" }], "descricao_visual": "Noé de pé, com a mão no peito, diante de um terreno vazio e um céu que começa a escurecer", "personagens": ["noe"], "emocao": "surpresa", "duracao_seg": 7 },
-    { "numero": 3, "narracao": "Noé e os filhos trabalharam juntos. Cada um tinha uma tarefa, e tudo era feito com cuidado.", "descricao_visual": "Noé e três filhos serrando madeira e pregando tábuas numa arca grande, serragem no chão", "personagens": ["noe", "familia-noe"], "emocao": "alegre", "duracao_seg": 8 },
-    { "numero": 4, "narracao": "Quando a arca ficou pronta, os animais começaram a chegar, de dois em dois.", "descricao_visual": "animais caminhando em fila, de dois em dois, subindo a rampa de madeira da arca", "personagens": ["animais"], "emocao": "surpresa", "duracao_seg": 8 },
-    { "numero": 5, "narracao": "Noé organizou cada casal no seu lugar, com carinho e paciência.", "descricao_visual": "Noé ajudando um casal de leões a entrar em um compartimento organizado, com fileiras de animais ao fundo", "personagens": ["noe", "animais"], "emocao": "calma", "duracao_seg": 8 },
-    { "numero": 6, "narracao": "A chuva caiu por muitos dias. Dentro da arca, todos estavam seguros e tranquilos.", "descricao_visual": "vista de dentro da arca, com uma pequena janela mostrando chuva lá fora; família e animais tranquilos", "personagens": ["familia-noe", "animais"], "emocao": "calma", "duracao_seg": 8 },
-    { "numero": 7, "narracao": "Quando a chuva parou, a arca pousou em segurança. Noé agradeceu a Deus.", "descricao_visual": "Noé ajoelhado em oração ao lado da arca, céu azul depois da chuva", "personagens": ["noe"], "emocao": "alegre", "duracao_seg": 8 },
-    { "numero": 8, "narracao": "Deus prometeu que nunca mais haveria um dilúvio assim. Como sinal, apareceu um arco-íris no céu.", "descricao_visual": "arco-íris sobre a arca, animais e família saindo alegres", "personagens": ["noe", "familia-noe", "animais"], "emocao": "alegre", "duracao_seg": 9 }
+    { "numero": 1, "narracao": "Havia um homem chamado Noé. Ele amava a Deus e queria obedecer.", "descricao_visual": "Noé sorrindo num jardim ensolarado, com túnica bege e cinto de corda", "cenario": "casa", "personagens": ["noe"], "emocao": "alegre", "duracao_seg": 6 },
+    { "numero": 2, "narracao": "Um dia, Deus pediu que Noé construísse uma arca bem grande.", "dialogos": [{ "personagem": "noe", "fala": "Sim, eu vou fazer!" }], "descricao_visual": "Noé de pé, com a mão no peito, diante de um terreno vazio e um céu que começa a escurecer", "cenario": "campo-galileia", "personagens": ["noe"], "emocao": "surpresa", "duracao_seg": 7 },
+    { "numero": 3, "narracao": "Noé e os filhos trabalharam juntos. Cada um tinha uma tarefa, e tudo era feito com cuidado.", "descricao_visual": "Noé e três filhos serrando madeira e pregando tábuas numa arca grande, serragem no chão", "cenario": "arca", "personagens": ["noe", "familia-noe"], "emocao": "alegre", "duracao_seg": 8 },
+    { "numero": 4, "narracao": "Quando a arca ficou pronta, os animais começaram a chegar, de dois em dois.", "descricao_visual": "animais caminhando em fila, de dois em dois, subindo a rampa de madeira da arca", "cenario": "arca", "personagens": ["animais"], "emocao": "surpresa", "duracao_seg": 8 },
+    { "numero": 5, "narracao": "Noé organizou cada casal no seu lugar, com carinho e paciência.", "descricao_visual": "Noé ajudando um casal de leões a entrar em um compartimento organizado, com fileiras de animais ao fundo", "cenario": "interior-arca", "personagens": ["noe", "animais"], "emocao": "calma", "duracao_seg": 8 },
+    { "numero": 6, "narracao": "A chuva caiu por muitos dias. Dentro da arca, todos estavam seguros e tranquilos.", "descricao_visual": "vista de dentro da arca, com uma pequena janela mostrando chuva lá fora; família e animais tranquilos", "cenario": "interior-arca", "personagens": ["familia-noe", "animais"], "emocao": "calma", "duracao_seg": 8 },
+    { "numero": 7, "narracao": "Quando a chuva parou, a arca pousou em segurança. Noé agradeceu a Deus.", "descricao_visual": "Noé ajoelhado em oração ao lado da arca, céu azul depois da chuva", "cenario": "arca", "personagens": ["noe"], "emocao": "alegre", "duracao_seg": 8 },
+    { "numero": 8, "narracao": "Deus prometeu que nunca mais haveria um dilúvio assim. Como sinal, apareceu um arco-íris no céu.", "descricao_visual": "arco-íris sobre a arca, animais e família saindo alegres", "cenario": "arca", "personagens": ["noe", "familia-noe", "animais"], "emocao": "alegre", "duracao_seg": 9 }
   ],
   "licao": "Quando obedecemos a Deus e nos organizamos com cuidado, fazemos coisas boas e protegemos quem amamos.",
   "perguntas": [

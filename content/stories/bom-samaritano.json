@@ -4,7 +4,7 @@
   "referencia_biblica": "Lucas 10:25-37",
   "faixa_etaria": "4-10",
   "valor_central": "bondade",
-  "versiculo_chave": { "texto": "Ame o seu próximo como a si mesmo.", "referencia": "Lucas 10:27" },
+  "versiculo_chave": { "texto": "Ame o seu próximo como a si mesmo.", "referencia": "Lucas 10:27", "traducao": "NVI" },
   "resumo": "Jesus contou a história de um homem que foi machucado no caminho. Muitos passaram sem ajudar, mas um samaritano parou, cuidou dele e mostrou o que é amar o próximo.",
   "personagens": [
     { "id": "jesus", "nome": "Jesus", "descricao_visual": "homem gentil, sorriso calmo, túnica clara e manto azul" },
@@ -12,12 +12,12 @@
     { "id": "samaritano", "nome": "Samaritano", "descricao_visual": "homem bondoso de túnica verde, com um burrinho" }
   ],
   "cenas": [
-    { "numero": 1, "narracao": "Um dia, Jesus contou uma história muito especial.", "descricao_visual": "Jesus sentado numa pedra, crianças e adultos ouvindo ao redor, dia ensolarado", "personagens": ["jesus"], "emocao": "calma", "duracao_seg": 6 },
-    { "numero": 2, "narracao": "Um homem viajava por uma estrada. No caminho, ele se machucou e ficou caído, precisando de ajuda.", "descricao_visual": "estrada de terra entre montanhas, viajante sentado no chão com o joelho enfaixado, expressão triste", "personagens": ["viajante"], "emocao": "triste", "duracao_seg": 8 },
-    { "numero": 3, "narracao": "Algumas pessoas passaram por ali, mas não pararam para ajudar.", "descricao_visual": "duas pessoas caminhando pelo outro lado da estrada, olhando para longe", "personagens": ["viajante"], "emocao": "triste", "duracao_seg": 7 },
-    { "numero": 4, "narracao": "Então chegou um samaritano. Ele viu o homem e sentiu compaixão.", "descricao_visual": "samaritano com seu burrinho se aproximando do viajante, olhar carinhoso", "personagens": ["samaritano", "viajante"], "emocao": "surpresa", "duracao_seg": 7 },
-    { "numero": 5, "narracao": "Ele cuidou dos machucados, colocou o homem no seu burrinho e o levou para uma hospedaria.", "dialogos": [{ "personagem": "samaritano", "fala": "Não se preocupe, eu vou cuidar de você!" }], "descricao_visual": "samaritano ajudando o viajante a subir no burrinho, caminho até uma casinha iluminada", "personagens": ["samaritano", "viajante"], "emocao": "alegre", "duracao_seg": 9 },
-    { "numero": 6, "narracao": "Jesus perguntou: quem foi o bom vizinho? Aquele que ajudou! E Jesus disse: vá e faça o mesmo.", "descricao_visual": "Jesus sorrindo e apontando com carinho para as crianças", "personagens": ["jesus"], "emocao": "alegre", "duracao_seg": 9 }
+    { "numero": 1, "narracao": "Um dia, Jesus contou uma história muito especial.", "descricao_visual": "Jesus sentado numa pedra, crianças e adultos ouvindo ao redor, dia ensolarado", "cenario": "colina-multidao", "personagens": ["jesus"], "emocao": "calma", "duracao_seg": 6 },
+    { "numero": 2, "narracao": "Um homem viajava por uma estrada. No caminho, ele se machucou e ficou caído, precisando de ajuda.", "descricao_visual": "estrada de terra entre montanhas, viajante sentado no chão com o joelho enfaixado, expressão triste", "cenario": "estrada", "personagens": ["viajante"], "emocao": "triste", "duracao_seg": 8 },
+    { "numero": 3, "narracao": "Algumas pessoas passaram por ali, mas não pararam para ajudar.", "descricao_visual": "duas pessoas caminhando pelo outro lado da estrada, olhando para longe", "cenario": "estrada", "personagens": ["viajante"], "emocao": "triste", "duracao_seg": 7 },
+    { "numero": 4, "narracao": "Então chegou um samaritano. Ele viu o homem e sentiu compaixão.", "descricao_visual": "samaritano com seu burrinho se aproximando do viajante, olhar carinhoso", "cenario": "estrada", "personagens": ["samaritano", "viajante"], "emocao": "surpresa", "duracao_seg": 7 },
+    { "numero": 5, "narracao": "Ele cuidou dos machucados, colocou o homem no seu burrinho e o levou para uma hospedaria.", "dialogos": [{ "personagem": "samaritano", "fala": "Não se preocupe, eu vou cuidar de você!" }], "descricao_visual": "samaritano ajudando o viajante a subir no burrinho, caminho até uma casinha iluminada", "cenario": "estrada", "personagens": ["samaritano", "viajante"], "emocao": "alegre", "duracao_seg": 9 },
+    { "numero": 6, "narracao": "Jesus perguntou: quem foi o bom vizinho? Aquele que ajudou! E Jesus disse: vá e faça o mesmo.", "descricao_visual": "Jesus sorrindo e apontando com carinho para as crianças", "cenario": "colina-multidao", "personagens": ["jesus"], "emocao": "alegre", "duracao_seg": 9 }
   ],
   "licao": "Amar o próximo é ajudar quem precisa, mesmo quem é diferente de nós.",
   "perguntas": [

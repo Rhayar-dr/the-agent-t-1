@@ -1,0 +1,52 @@
+{
+  "id": "jesus-acalma-a-tempestade",
+  "titulo": "Jesus Acalma a Tempestade",
+  "referencia_biblica": "Marcos 4:35-41",
+  "faixa_etaria": "4-6",
+  "valor_central": "coragem e confiança",
+  "versiculo_chave": { "texto": "Aquiete-se! Acalme-se!", "referencia": "Marcos 4:39", "traducao": "NVI" },
+  "resumo": "Jesus estava num barco com os amigos quando veio uma tempestade forte. Os amigos ficaram com medo, e Jesus estava dormindo. Ele acalmou o vento e o mar, e todos aprenderam a confiar nele.",
+  "personagens": [
+    { "id": "jesus", "nome": "Jesus", "descricao_visual": "homem gentil, túnica clara e manto azul; dormindo tranquilo na popa do barco e depois de pé, com o braço estendido" },
+    { "id": "discipulos", "nome": "Discípulos", "descricao_visual": "pescadores de túnicas simples, um deles segurando o remo com força, expressão de medo" }
+  ],
+  "cenas": [
+    { "numero": 1, "narracao": "Jesus e os amigos entraram num barco para atravessar o lago.", "descricao_visual": "barco de madeira saindo da margem de um lago tranquilo, céu azul", "cenario": "campo-galileia", "personagens": ["jesus", "discipulos"], "emocao": "calma", "duracao_seg": 7 },
+    { "numero": 2, "narracao": "De repente, veio um vento forte, e as ondas começaram a balançar o barco.", "descricao_visual": "ondas altas batendo no barco, céu escuro com nuvens e vento forte", "cenario": "campo-galileia", "personagens": ["discipulos"], "emocao": "surpresa", "duracao_seg": 8 },
+    { "numero": 3, "narracao": "Os amigos ficaram com medo. Jesus estava dormindo na popa do barco.", "dialogos": [{ "personagem": "discipulos", "fala": "Mestre, você não se importa com a gente?" }], "descricao_visual": "discípulos apavorados segurando as bordas do barco; Jesus dormindo tranquilo com a cabeça no travesseiro", "cenario": "campo-galileia", "personagens": ["discipulos", "jesus"], "emocao": "triste", "duracao_seg": 9 },
+    { "numero": 4, "narracao": "Jesus acordou, levantou-se e falou com o vento e com o mar.", "dialogos": [{ "personagem": "jesus", "fala": "Aquiete-se! Acalme-se!" }], "descricao_visual": "Jesus de pé no barco, com o braço estendido para o mar, em atitude de calma", "cenario": "campo-galileia", "personagens": ["jesus"], "emocao": "calma", "duracao_seg": 8 },
+    { "numero": 5, "narracao": "O vento parou, e tudo ficou calmo e tranquilo.", "descricao_visual": "mar liso como um espelho, céu azul e sol brilhando, barco parado", "cenario": "campo-galileia", "personagens": ["discipulos", "jesus"], "emocao": "alegre", "duracao_seg": 7 },
+    { "numero": 6, "narracao": "Jesus perguntou por que estavam com tanto medo, e lembrou que eles podiam confiar nele.", "dialogos": [{ "personagem": "jesus", "fala": "Por que vocês estão com tanto medo? Ainda não têm fé?" }], "descricao_visual": "Jesus sentado no barco, conversando com os amigos, que agora estão calmos", "cenario": "campo-galileia", "personagens": ["jesus", "discipulos"], "emocao": "calma", "duracao_seg": 9 }
+  ],
+  "licao": "Quando sentimos medo, podemos ser corajosos e confiar que Deus está conosco.",
+  "perguntas": [
+    { "pergunta": "O que aconteceu no lago?", "opcoes": ["Veio uma tempestade", "Teve uma festa", "Apareceu um arco-íris"], "correta": 0, "explicacao": "Um vento forte e ondas altas balançaram o barco." },
+    { "pergunta": "Como os amigos de Jesus se sentiram?", "opcoes": ["Com medo", "Com sono", "Com fome"], "correta": 0, "explicacao": "Eles ficaram com medo da tempestade." },
+    { "pergunta": "O que Jesus fez?", "opcoes": ["Acalmou o vento e o mar", "Foi embora de barco", "Chamou um barco maior"], "correta": 0, "explicacao": "Jesus falou com o vento e o mar, e tudo ficou calmo." }
+  ],
+  "escolhas_bondade": [
+    { "situacao": "Um colega está com medo de subir no escorregador.", "opcoes": [
+      { "texto": "Ficar perto dele e encorajar", "bondosa": true, "feedback": "Muito bem! Sua companhia ajuda a ter coragem." },
+      { "texto": "Rir dele na frente de todos", "bondosa": false, "feedback": "Tente de novo! Como será que ele se sentiu?" }
+    ] },
+    { "situacao": "Está chovendo forte, e um colega ficou sem guarda-chuva.", "opcoes": [
+      { "texto": "Dividir o guarda-chuva com ele", "bondosa": true, "feedback": "Que bom! Você cuidou do seu amigo." },
+      { "texto": "Correr e deixá-lo para trás", "bondosa": false, "feedback": "Tente de novo! Ajudar faz o caminho ficar mais leve." }
+    ] },
+    { "situacao": "Você está nervoso para apresentar um trabalho na frente da turma.", "opcoes": [
+      { "texto": "Respirar fundo e pedir ajuda a alguém de confiança", "bondosa": true, "feedback": "Muito bem! Pedir ajuda também é ser corajoso." },
+      { "texto": "Desistir sem tentar", "bondosa": false, "feedback": "Tente de novo! Com calma e ajuda, você consegue." }
+    ] }
+  ],
+  "atividade_organizacao": {
+    "titulo": "Barco Arrumado",
+    "instrucoes": "Ajude a arrumar o barco antes de atravessar o lago. Coloque cada coisa no lugar, para que o barco fique firme e seguro.",
+    "itens": [
+      { "item": "remos", "lugar": "lado do barco" },
+      { "item": "redes de pesca", "lugar": "caixa de pesca" },
+      { "item": "coletes salva-vidas", "lugar": "banco da frente, à mão" },
+      { "item": "água e pão", "lugar": "cesta fechada" }
+    ]
+  },
+  "oracao_curta": "Querido Jesus, quando eu sentir medo, lembra-me de que estás comigo. Ajuda-me a ser corajoso e a confiar em ti. Amém."
+}
