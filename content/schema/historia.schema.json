@@ -13,9 +13,9 @@
       "type": "object",
       "required": ["texto", "referencia"],
       "properties": {
-        "texto": { "type": "string", "description": "texto exato da tradução indicada (padrão do projeto: NVI)" },
+        "texto": { "type": "string" },
         "referencia": { "type": "string" },
-        "traducao": { "type": "string", "description": "sigla da tradução bíblica; padrão do projeto: NVI", "default": "NVI" }
+        "traducao": { "type": "string", "description": "opcional; padrão do projeto: NVI (decisão D1)" }
       }
     },
     "resumo": { "type": "string", "description": "2-3 frases" },
@@ -24,7 +24,7 @@
       "items": {
         "type": "object",
         "required": ["id", "nome", "descricao_visual"],
-        "properties": { "id": { "type": "string", "description": "também é o nome do asset: assets/personagens/<id>.svg" }, "nome": { "type": "string" }, "descricao_visual": { "type": "string" } }
+        "properties": { "id": { "type": "string" }, "nome": { "type": "string" }, "descricao_visual": { "type": "string" } }
       }
     },
     "cenas": {
@@ -38,7 +38,7 @@
           "narracao": { "type": "string", "description": "texto lido pelo narrador, frases curtas" },
           "dialogos": { "type": "array", "items": { "type": "object", "properties": { "personagem": { "type": "string" }, "fala": { "type": "string" } } } },
           "descricao_visual": { "type": "string", "description": "o que aparece na imagem (usado como prompt de ilustração)" },
-          "cenario": { "type": "string", "description": "opcional: id do fundo em assets/cenarios/<id>.svg (ex.: estrada, arca, interior-arca, campo-galileia, casa). Sem o campo, inferir por descricao_visual; fallback campo-galileia" },
+          "cenario": { "type": "string", "enum": ["estrada", "arca", "interior-arca", "campo-galileia", "colina-multidao", "casa", "festa"], "description": "opcional; id de assets/cenarios/<id>.svg (decisão D6)" },
           "personagens": { "type": "array", "items": { "type": "string" } },
           "emocao": { "type": "string", "description": "alegre, triste, surpresa, calma..." },
           "duracao_seg": { "type": "number" }
