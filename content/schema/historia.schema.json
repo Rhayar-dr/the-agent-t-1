@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Historia LearningJesus",
+  "type": "object",
+  "required": ["id", "titulo", "referencia_biblica", "faixa_etaria", "valor_central", "versiculo_chave", "resumo", "personagens", "cenas", "licao", "perguntas"],
+  "properties": {
+    "id": { "type": "string", "description": "slug em minúsculas, ex: bom-samaritano" },
+    "titulo": { "type": "string" },
+    "referencia_biblica": { "type": "string", "description": "ex: Lucas 10:25-37" },
+    "faixa_etaria": { "type": "string", "enum": ["4-6", "7-10", "4-10"] },
+    "valor_central": { "type": "string", "description": "ex: bondade, perdão, partilha, organização, obediência" },
+    "versiculo_chave": {
+      "type": "object",
+      "required": ["texto", "referencia"],
+      "properties": {
+        "texto": { "type": "string", "description": "texto exato da tradução indicada (padrão do projeto: NVI)" },
+        "referencia": { "type": "string" },
+        "traducao": { "type": "string", "description": "sigla da tradução bíblica; padrão do projeto: NVI", "default": "NVI" }
+      }
+    },
+    "resumo": { "type": "string", "description": "2-3 frases" },
+    "personagens": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "nome", "descricao_visual"],
+        "properties": { "id": { "type": "string", "description": "também é o nome do asset: assets/personagens/<id>.svg" }, "nome": { "type": "string" }, "descricao_visual": { "type": "string" } }
+      }
+    },
+    "cenas": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["numero", "narracao", "descricao_visual", "personagens"],
+        "properties": {
+          "numero": { "type": "integer" },
+          "narracao": { "type": "string", "description": "texto lido pelo narrador, frases curtas" },
+          "dialogos": { "type": "array", "items": { "type": "object", "properties": { "personagem": { "type": "string" }, "fala": { "type": "string" } } } },
+          "descricao_visual": { "type": "string", "description": "o que aparece na imagem (usado como prompt de ilustração)" },
+          "cenario": { "type": "string", "description": "opcional: id do fundo em assets/cenarios/<id>.svg (ex.: estrada, arca, interior-arca, campo-galileia, casa). Sem o campo, inferir por descricao_visual; fallback campo-galileia" },
+          "personagens": { "type": "array", "items": { "type": "string" } },
+          "emocao": { "type": "string", "description": "alegre, triste, surpresa, calma..." },
+          "duracao_seg": { "type": "number" }
+        }
+      }
+    },
+    "licao": { "type": "string", "description": "a mensagem para a vida da criança" },
+    "perguntas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["pergunta", "opcoes", "correta"],
+        "properties": {
+          "pergunta": { "type": "string" },
+          "opcoes": { "type": "array", "items": { "type": "string" }, "minItems": 2, "maxItems": 4 },
+          "correta": { "type": "integer", "description": "índice da opção correta" },
+          "explicacao": { "type": "string" }
+        }
+      }
+    },
+    "escolhas_bondade": {
+      "type": "array",
+      "description": "situações do dia a dia para o jogo de escolhas",
+      "items": {
+        "type": "object",
+        "properties": {
+          "situacao": { "type": "string" },
+          "opcoes": { "type": "array", "items": { "type": "object", "properties": { "texto": { "type": "string" }, "bondosa": { "type": "boolean" }, "feedback": { "type": "string" } } } }
+        }
+      }
+    },
+    "atividade_organizacao": {
+      "type": "object",
+      "description": "tarefa prática de organização ligada à história",
+      "properties": { "titulo": { "type": "string" }, "instrucoes": { "type": "string" }, "itens": { "type": "array", "items": { "type": "object", "properties": { "item": { "type": "string" }, "lugar": { "type": "string" } } } } }
+    },
+    "oracao_curta": { "type": "string" }
+  }
+}
